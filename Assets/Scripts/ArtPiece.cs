@@ -5,7 +5,7 @@ public class ArtPiece : MonoBehaviour
     public int pieceID; // 策划可以在 Inspector 中定义每个碎片的编码
     private GridManager gridManager;
     private bool isDragging;
-    private Vector3 offset;
+    public bool canDrag = false;
 
     Collider2D targetCol;
 
@@ -29,6 +29,8 @@ public class ArtPiece : MonoBehaviour
 
     void DragAndDrop()
     {
+        if (!canDrag) return;//没裁剪开前不能拖动
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0))

@@ -49,6 +49,7 @@ public class GridManager : MonoBehaviour
 
     private void CheckSequence()
     {
+        // 顺序检测：根据文档确定行数。
         ArtPiece[] allPieces = FindObjectsByType<ArtPiece>(FindObjectsSortMode.None);
 
         List<ArtPiece> snappedPieces = allPieces
