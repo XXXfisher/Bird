@@ -12,8 +12,6 @@ public class LetterManager : MonoBehaviour
 {
     public GameObject currentLetterInstance;
 
-    public MyScissors scissors;
-
     public void SpawnLetter(GameObject prefab)
     {
 
