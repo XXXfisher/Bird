@@ -2,6 +2,8 @@
  * 负责管理当前的Letter实例，连接UI Button。
  * 
  * MyLetterUI.cs中点击UI Button后调用SpawnLetter方法生成对应的Letter实例。
+ * 
+ * 连接letterController判断纸条是否已经被剪刀裁剪过，如果已经裁剪过则保留当前实例，否则删除当前实例。
  */
 
 using UnityEngine;
@@ -35,7 +37,5 @@ public class LetterManager : MonoBehaviour
         // 生成新实例
         currentLetterInstance = Instantiate(prefab);
 
-        // 剪刀监听currentLetter
-        scissors.currentLetter = currentLetterInstance.GetComponent<LetterController>();
     }
 }
