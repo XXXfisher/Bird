@@ -16,6 +16,8 @@ public class LetterController : MonoBehaviour
 {
     public GameObject[] stateGroups; // 包含不同状态的子物体组
 
+    private FlipController flipCtrl;
+
     private int currentStateIndex = 0; // 当前状态索引
 
     private bool cut0 = false;
@@ -26,12 +28,23 @@ public class LetterController : MonoBehaviour
 
     public bool isFullyBroken => cut0 && cut1;
 
+    void Awake()
+    {
+        flipCtrl = GetComponent<FlipController>();
+    }
+
     /*
      * ID用于区分是哪个触发器触发的。
      * ID是由挂在感应区上的子物体trigger脚本传给LetterController的
      */
     public void StartCutting(int triggerID)
     {
+        if (flipCtrl != null && !flipCtrl.canCut)
+        {
+            Debug.Log("正面状态，无法裁剪");
+            return;
+        }
+
         if (triggerID == 0) cut0 = true;
         if (triggerID == 1) cut1 = true;
 
