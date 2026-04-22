@@ -94,6 +94,20 @@ public class LetterController : MonoBehaviour
             {
                 p.canDrag = true;
 
+                /*
+                 * Ω˚”√ÀÈ∆¨…œµƒ≤√ºÙcollider:
+                 */
+
+                //TriggerZone[] zones = p.GetComponentsInChildren<TriggerZone>();
+                //foreach (TriggerZone zone in zones)
+                //{
+                //    Collider2D zoneCollider = zone.GetComponent<Collider2D>();
+                //    if (zoneCollider != null)
+                //    {
+                //        zoneCollider.enabled = false;
+                //    }
+                //}
+
                 Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {

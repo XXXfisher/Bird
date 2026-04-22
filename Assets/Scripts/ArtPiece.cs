@@ -1,11 +1,15 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ArtPiece : MonoBehaviour
 {
+    [Tooltip("定义每个碎片的编码，最小为1不能是0，每个碎片编码不能相同")]
     public int pieceID; // 策划可以在 Inspector 中定义每个碎片的编码
     private GridManager gridManager;
     private bool isDragging;
     public bool canDrag = false;
+    private SpriteRenderer sr;
+
 
     Collider2D targetCol;
 
@@ -18,6 +22,9 @@ public class ArtPiece : MonoBehaviour
         targetCol = GetComponent<Collider2D>();
 
         startPos = this.transform.position;
+
+        sr = GetComponent<SpriteRenderer>();
+        sr.sortingOrder = pieceID;
 
     }
 
@@ -32,12 +39,29 @@ public class ArtPiece : MonoBehaviour
         if (!canDrag) return;//没裁剪开前不能拖动
 
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
         if (Input.GetMouseButtonDown(0))
         {
-            if (targetCol.OverlapPoint(mousePos))
+            Collider2D[] hits = Physics2D.OverlapPointAll(mousePos);
+
+            if (hits.Length > 0)
             {
-                isDragging = true;
+                Collider2D topCol = hits[0];
+                int topOrder = topCol.GetComponent<SpriteRenderer>().sortingOrder;
+
+                foreach (var col in hits)
+                {
+                    SpriteRenderer sr = col.GetComponent<SpriteRenderer>();
+                    if (sr != null && sr.sortingOrder > topOrder)
+                    {
+                        topOrder = sr.sortingOrder;
+                        topCol = col;
+                    }
+                }
+
+                if (topCol == targetCol)
+                {
+                    isDragging = true;
+                }
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -52,4 +76,6 @@ public class ArtPiece : MonoBehaviour
             this.transform.position = mousePos;
         }
     }
+
+
 }
