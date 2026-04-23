@@ -766,10 +766,10 @@ MonoBehaviour:
   day2Dialog: {fileID: 11400000, guid: b2d2bafe3ca4b0b46bbe34e87a0741fb, type: 2}
   day3Dialog: {fileID: 11400000, guid: 5f81ff6260737364b9c60ee3184a542a, type: 2}
   day4Dialog: {fileID: 11400000, guid: e99832d0ddfea1c479a66d29efe69ac9, type: 2}
-  D1: {fileID: 7548539682928623886, guid: 7570a71cde57afe46a254c2dcae6e7cc, type: 3}
-  D2: {fileID: 5447472718004740149, guid: 1b7bcea5d30c2084a8a81d4448067922, type: 3}
-  D3: {fileID: 9072822018663316598, guid: 2944c649218d5ac4ebb119991d54cf50, type: 3}
-  D4: {fileID: 5572285710935752763, guid: 8021c1b4ef7030145a52c2f404543e58, type: 3}
+  D1: {fileID: 2685450420117167474, guid: 7570a71cde57afe46a254c2dcae6e7cc, type: 3}
+  D2: {fileID: 1472365964334922927, guid: 1b7bcea5d30c2084a8a81d4448067922, type: 3}
+  D3: {fileID: 5457461343798721632, guid: 2944c649218d5ac4ebb119991d54cf50, type: 3}
+  D4: {fileID: 6202528865245129252, guid: 8021c1b4ef7030145a52c2f404543e58, type: 3}
 --- !u!1 &1142970849
 GameObject:
   m_ObjectHideFlags: 0
