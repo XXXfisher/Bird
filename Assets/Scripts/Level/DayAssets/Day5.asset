@@ -16,6 +16,7 @@ MonoBehaviour:
   levelType: 1
   dialogData: {fileID: 0}
   isDialogNeeded: 0
-  backgroundImage: {fileID: 0}
+  backgroundImage: {fileID: 7743381973722702082, guid: 25b2deb6390e21d4d9f35f6328b23ff8, type: 3}
   targetSequence: 
   showHoverPanel: 1
+  showDay6Input: 0
