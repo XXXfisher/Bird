@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44c2766d111e26d44862351ead940e8f, type: 3}
-  m_Name: Dialog11
+  m_Name: Dialog40A_receive
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "Yes, back then\u2026 we used to argue a lot"
+    text: "\u2026\u2026\u4F60\u6765\u4E86\u3002"
   - ID: Noah
     image: {fileID: 0}
-    text: "Elena\u2019s handwriting"
+    text: "\u4ECA\u5929\u4E5F\u6709\u4FE1\u3002"
   - ID: Noah
     image: {fileID: 0}
-    text: "It\u2019s my fault!"
+    text: "\u6211\u5DF2\u7ECF\u5F00\u59CB\uFF0C\u7B49\u4F60\u51FA\u73B0\u4E86\u3002"
   - ID: Noah
     image: {fileID: 0}
-    text: It was my fault...
+    text: "\u597D\u50CF\u53EA\u8981\u4F60\u6765\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u6211\u5C31\u8FD8\u80FD\u518D\u591A\u8BB0\u5F97\u5979\u4E00\u70B9\u3002"

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using System;
 using System.Text;
 using System.Collections.Generic;
 using System.IO;
@@ -7,9 +8,10 @@ using System.Linq;
 
 public class DialogCsvTool : EditorWindow
 {
+    // 统一都放在 Assets/Dialog
     private string csvPath = "Assets/Dialog/dialog.csv";
     private string outputFolder = "Assets/Dialog";
-    private string exportFolder = "Assets/DialogExport";
+    private string exportFolder = "Assets/Dialog";
 
     [MenuItem("Tools/Dialog CSV Tool")]
     public static void ShowWindow()
@@ -29,28 +31,43 @@ public class DialogCsvTool : EditorWindow
 
         EditorGUILayout.Space();
 
+        EditorGUILayout.HelpBox(
+            "CSV Format:\nDialogName,LineIndex,SpeakerName,Text,PortraitSprite\n\n" +
+            "SpeakerName -> DialogPiece.ID\n" +
+            "PortraitSprite -> DialogPiece.image (fill sprite name, not path)\n" +
+            "Text -> DialogPiece.text",
+            MessageType.Info
+        );
+
+        EditorGUILayout.Space();
+
         if (GUILayout.Button("Import CSV -> DialogData_SO"))
         {
+            Debug.Log("[DialogCsvTool] Import button clicked");
             ImportCsvToDialogAssets(csvPath, outputFolder);
         }
 
         if (GUILayout.Button("Export DialogData_SO -> CSV"))
         {
+            Debug.Log("[DialogCsvTool] Export button clicked");
             ExportDialogAssetsToCsv(outputFolder, exportFolder);
         }
     }
 
+    [Serializable]
     private class CsvRow
     {
         public string dialogName;
         public int lineIndex;
-        public string id;
+        public string speakerName;
         public string text;
-        public string imagePath;
+        public string portraitSprite;
     }
 
     public static void ImportCsvToDialogAssets(string csvFilePath, string assetOutputFolder)
     {
+        Debug.Log($"[DialogCsvTool] Start Import. csvFilePath={csvFilePath}, assetOutputFolder={assetOutputFolder}");
+
         if (!File.Exists(csvFilePath))
         {
             Debug.LogError($"[DialogCsvTool] CSV file not found: {csvFilePath}");
@@ -60,45 +77,79 @@ public class DialogCsvTool : EditorWindow
         EnsureFolderExists(assetOutputFolder);
 
         string csvContent = File.ReadAllText(csvFilePath, Encoding.UTF8);
-        string[] lines = csvContent.Split(new[] { "\r\n", "\n" }, System.StringSplitOptions.None);
-        if (lines.Length <= 1)
+        csvContent = csvContent.TrimStart('\uFEFF');
+
+        List<string[]> records = ParseCsvRecords(csvContent);
+
+        if (records.Count <= 1)
         {
             Debug.LogWarning("[DialogCsvTool] CSV is empty or only contains header.");
             return;
         }
 
+        // 可选：检查表头是否符合预期
+        string[] header = records[0];
+        if (header.Length < 5)
+        {
+            Debug.LogWarning("[DialogCsvTool] CSV header column count is less than 5.");
+        }
+        else
+        {
+            Debug.Log($"[DialogCsvTool] Header = {string.Join(" | ", header)}");
+        }
+
         List<CsvRow> rows = new List<CsvRow>();
 
-        for (int i = 1; i < lines.Length; i++)
+        for (int i = 1; i < records.Count; i++) // 跳过表头
         {
-            string rawLine = lines[i];
-            if (string.IsNullOrWhiteSpace(rawLine))
+            string[] cols = records[i];
+
+            if (cols == null || cols.Length == 0)
                 continue;
 
-            string[] cols = ParseCsvLine(rawLine);
+            if (IsRecordCompletelyEmpty(cols))
+                continue;
 
             if (cols.Length < 5)
             {
-                Debug.LogWarning($"[DialogCsvTool] Line {i + 1} skipped. Need 5 columns: {rawLine}");
+                Debug.LogWarning($"[DialogCsvTool] Record {i + 1} skipped. Need 5 columns.");
                 continue;
             }
 
-            if (!int.TryParse(cols[1], out int lineIndex))
+            string dialogName = cols[0].Trim();
+            string lineIndexRaw = cols[1].Trim();
+            string speakerName = cols[2];
+            string text = cols[3];
+            string portraitSprite = cols[4];
+
+            if (string.IsNullOrWhiteSpace(dialogName))
             {
-                Debug.LogWarning($"[DialogCsvTool] Invalid LineIndex at line {i + 1}: {rawLine}");
+                Debug.LogWarning($"[DialogCsvTool] Record {i + 1} skipped. DialogName is empty.");
+                continue;
+            }
+
+            if (!int.TryParse(lineIndexRaw, out int lineIndex))
+            {
+                Debug.LogWarning($"[DialogCsvTool] Record {i + 1} skipped. Invalid LineIndex: {lineIndexRaw}");
                 continue;
             }
 
             CsvRow row = new CsvRow
             {
-                dialogName = cols[0].Trim(),
+                dialogName = dialogName,
                 lineIndex = lineIndex,
-                id = cols[2],
-                text = cols[3],
-                imagePath = cols[4]
+                speakerName = speakerName,
+                text = text,
+                portraitSprite = portraitSprite
             };
 
             rows.Add(row);
+        }
+
+        if (rows.Count == 0)
+        {
+            Debug.LogWarning("[DialogCsvTool] No valid dialog rows found in CSV.");
+            return;
         }
 
         var grouped = rows.GroupBy(r => r.dialogName);
@@ -109,13 +160,8 @@ public class DialogCsvTool : EditorWindow
         foreach (var group in grouped)
         {
             string dialogName = group.Key;
-            if (string.IsNullOrWhiteSpace(dialogName))
-            {
-                Debug.LogWarning("[DialogCsvTool] Found empty DialogName, skipped.");
-                continue;
-            }
-
             string assetPath = $"{assetOutputFolder}/{dialogName}.asset";
+
             DialogData_SO dialogAsset = AssetDatabase.LoadAssetAtPath<DialogData_SO>(assetPath);
 
             bool isNew = false;
@@ -124,17 +170,29 @@ public class DialogCsvTool : EditorWindow
                 dialogAsset = ScriptableObject.CreateInstance<DialogData_SO>();
                 AssetDatabase.CreateAsset(dialogAsset, assetPath);
                 isNew = true;
+                Debug.Log($"[DialogCsvTool] Created new asset: {assetPath}");
+            }
+            else
+            {
+                Debug.Log($"[DialogCsvTool] Updating existing asset: {assetPath}");
             }
 
-            dialogAsset.dialogPieces.Clear();
+            if (dialogAsset.dialogPieces == null)
+            {
+                dialogAsset.dialogPieces = new List<DialogPiece>();
+            }
+            else
+            {
+                dialogAsset.dialogPieces.Clear();
+            }
 
             foreach (CsvRow row in group.OrderBy(r => r.lineIndex))
             {
                 DialogPiece piece = new DialogPiece
                 {
-                    ID = row.id,
+                    ID = row.speakerName,
                     text = row.text,
-                    image = LoadSprite(row.imagePath)
+                    image = LoadSpriteByName(row.portraitSprite)
                 };
 
                 dialogAsset.dialogPieces.Add(piece);
@@ -154,64 +212,92 @@ public class DialogCsvTool : EditorWindow
 
     public static void ExportDialogAssetsToCsv(string dialogFolder, string csvOutputFolder)
     {
+        Debug.Log($"[DialogCsvTool] Start Export. dialogFolder={dialogFolder}, csvOutputFolder={csvOutputFolder}");
+
         EnsureFolderExists(csvOutputFolder);
 
         string[] guids = AssetDatabase.FindAssets("t:DialogData_SO", new[] { dialogFolder });
-        if (guids.Length == 0)
+        if (guids == null || guids.Length == 0)
         {
             Debug.LogWarning($"[DialogCsvTool] No DialogData_SO found in folder: {dialogFolder}");
             return;
         }
 
-        string csvFilePath = Path.Combine(csvOutputFolder, "dialog_export.csv");
+        string csvFilePath = Path.Combine(csvOutputFolder, "dialog.csv");
 
         List<string> lines = new List<string>
         {
-            "DialogName,LineIndex,ID,Text,ImagePath"
+            "DialogName,LineIndex,SpeakerName,Text,PortraitSprite"
         };
+
+        List<DialogData_SO> allAssets = new List<DialogData_SO>();
 
         foreach (string guid in guids)
         {
             string assetPath = AssetDatabase.GUIDToAssetPath(guid);
             DialogData_SO dialogAsset = AssetDatabase.LoadAssetAtPath<DialogData_SO>(assetPath);
-            if (dialogAsset == null)
-                continue;
+            if (dialogAsset != null)
+            {
+                allAssets.Add(dialogAsset);
+            }
+        }
 
+        foreach (DialogData_SO dialogAsset in allAssets.OrderBy(a => a.name))
+        {
             string dialogName = dialogAsset.name;
+
+            if (dialogAsset.dialogPieces == null || dialogAsset.dialogPieces.Count == 0)
+            {
+                lines.Add($"{EscapeCsv(dialogName)},0,,,");
+                continue;
+            }
 
             for (int i = 0; i < dialogAsset.dialogPieces.Count; i++)
             {
                 DialogPiece piece = dialogAsset.dialogPieces[i];
 
-                string id = EscapeCsv(piece != null ? piece.ID : "");
+                string speakerName = EscapeCsv(piece != null ? piece.ID : "");
                 string text = EscapeCsv(piece != null ? piece.text : "");
-                string imagePath = "";
+                string portraitSprite = "";
 
                 if (piece != null && piece.image != null)
                 {
-                    imagePath = EscapeCsv(AssetDatabase.GetAssetPath(piece.image));
+                    portraitSprite = EscapeCsv(piece.image.name);
                 }
 
-                lines.Add($"{EscapeCsv(dialogName)},{i},{id},{text},{imagePath}");
+                lines.Add($"{EscapeCsv(dialogName)},{i},{speakerName},{text},{portraitSprite}");
             }
         }
 
-        File.WriteAllText(csvFilePath, string.Join("\n", lines), new UTF8Encoding(true));
-        AssetDatabase.Refresh();
+        string content = string.Join("\n", lines);
+        File.WriteAllText(csvFilePath, content, new UTF8Encoding(true));
 
+        AssetDatabase.Refresh();
         Debug.Log($"[DialogCsvTool] Export complete: {csvFilePath}");
     }
 
-    private static Sprite LoadSprite(string imagePath)
+    private static Sprite LoadSpriteByName(string spriteName)
     {
-        if (string.IsNullOrWhiteSpace(imagePath))
+        if (string.IsNullOrWhiteSpace(spriteName))
             return null;
 
-        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(imagePath.Trim());
+        string searchName = spriteName.Trim();
+
+        string[] guids = AssetDatabase.FindAssets($"{searchName} t:Sprite");
+        if (guids == null || guids.Length == 0)
+        {
+            Debug.LogWarning($"[DialogCsvTool] Sprite not found: {searchName}");
+            return null;
+        }
+
+        string path = AssetDatabase.GUIDToAssetPath(guids[0]);
+        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+
         if (sprite == null)
         {
-            Debug.LogWarning($"[DialogCsvTool] Sprite not found: {imagePath}");
+            Debug.LogWarning($"[DialogCsvTool] Failed to load sprite at path: {path}");
         }
+
         return sprite;
     }
 
@@ -220,7 +306,9 @@ public class DialogCsvTool : EditorWindow
         if (AssetDatabase.IsValidFolder(assetFolderPath))
             return;
 
-        string[] parts = assetFolderPath.Split('/');
+        string normalizedPath = assetFolderPath.Replace("\\", "/");
+
+        string[] parts = normalizedPath.Split('/');
         if (parts.Length < 2 || parts[0] != "Assets")
         {
             Debug.LogError($"[DialogCsvTool] Invalid folder path: {assetFolderPath}");
@@ -239,21 +327,23 @@ public class DialogCsvTool : EditorWindow
         }
     }
 
-    private static string[] ParseCsvLine(string line)
+    private static List<string[]> ParseCsvRecords(string content)
     {
-        List<string> result = new List<string>();
-        bool inQuotes = false;
-        string current = "";
+        List<string[]> records = new List<string[]>();
+        List<string> currentRow = new List<string>();
 
-        for (int i = 0; i < line.Length; i++)
+        bool inQuotes = false;
+        StringBuilder currentField = new StringBuilder();
+
+        for (int i = 0; i < content.Length; i++)
         {
-            char c = line[i];
+            char c = content[i];
 
             if (c == '"')
             {
-                if (inQuotes && i + 1 < line.Length && line[i + 1] == '"')
+                if (inQuotes && i + 1 < content.Length && content[i + 1] == '"')
                 {
-                    current += '"';
+                    currentField.Append('"');
                     i++;
                 }
                 else
@@ -263,17 +353,67 @@ public class DialogCsvTool : EditorWindow
             }
             else if (c == ',' && !inQuotes)
             {
-                result.Add(current);
-                current = "";
+                currentRow.Add(currentField.ToString());
+                currentField.Clear();
+            }
+            else if ((c == '\n' || c == '\r') && !inQuotes)
+            {
+                if (c == '\r' && i + 1 < content.Length && content[i + 1] == '\n')
+                {
+                    i++;
+                }
+
+                currentRow.Add(currentField.ToString());
+                currentField.Clear();
+
+                if (!IsRowCompletelyEmpty(currentRow))
+                {
+                    records.Add(currentRow.ToArray());
+                }
+
+                currentRow = new List<string>();
             }
             else
             {
-                current += c;
+                currentField.Append(c);
             }
         }
 
-        result.Add(current);
-        return result.ToArray();
+        currentRow.Add(currentField.ToString());
+        if (!IsRowCompletelyEmpty(currentRow))
+        {
+            records.Add(currentRow.ToArray());
+        }
+
+        return records;
+    }
+
+    private static bool IsRowCompletelyEmpty(List<string> row)
+    {
+        if (row == null || row.Count == 0)
+            return true;
+
+        for (int i = 0; i < row.Count; i++)
+        {
+            if (!string.IsNullOrWhiteSpace(row[i]))
+                return false;
+        }
+
+        return true;
+    }
+
+    private static bool IsRecordCompletelyEmpty(string[] record)
+    {
+        if (record == null || record.Length == 0)
+            return true;
+
+        for (int i = 0; i < record.Length; i++)
+        {
+            if (!string.IsNullOrWhiteSpace(record[i]))
+                return false;
+        }
+
+        return true;
     }
 
     private static string EscapeCsv(string value)
@@ -281,7 +421,7 @@ public class DialogCsvTool : EditorWindow
         if (value == null)
             return "";
 
-        bool needQuotes = value.Contains(",") || value.Contains("\"") || value.Contains("\n");
+        bool needQuotes = value.Contains(",") || value.Contains("\"") || value.Contains("\n") || value.Contains("\r");
         value = value.Replace("\"", "\"\"");
 
         return needQuotes ? $"\"{value}\"" : value;

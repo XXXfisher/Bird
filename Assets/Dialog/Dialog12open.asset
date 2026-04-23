@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44c2766d111e26d44862351ead940e8f, type: 3}
-  m_Name: Dialog1receive
+  m_Name: Dialog12open
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
-  - ID: 
+  - ID: Noah
     image: {fileID: 0}
-    text: "\u95E8\u53E3\u53C8\u6709\u4FE1\u3002"
-  - ID: 
+    text: "\u2026\u2026\u4E0D\u3002"
+  - ID: Noah
     image: {fileID: 0}
-    text: 
-  - ID: 
+    text: "\u522B\u662F\u8FD9\u4E2A\u3002"
+  - ID: Noah
     image: {fileID: 0}
-    text: 
-  - ID: 
+    text: "\u6211\u8FD8\u662F\u4E0D\u6562\u6253\u5F00\u3002"
+  - ID: Noah
     image: {fileID: 0}
-    text: 
+    text: "\u90A3\u5929\u665A\u4E0A\uFF0C\u6211\u8FDE\u5979\u6700\u540E\u4E00\u9762\u90FD\u6CA1\u89C1\u5230\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u5979\u4E00\u5B9A\u8FD8\u5728\u602A\u6211\u5427\u3002"

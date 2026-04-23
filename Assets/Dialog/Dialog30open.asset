@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44c2766d111e26d44862351ead940e8f, type: 3}
-  m_Name: Dialog10
+  m_Name: Dialog30open
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "Its\u2026\u2026"
+    text: "\u2026\u2026\u5979\u7684\u901F\u5199\u3002"
   - ID: Noah
     image: {fileID: 0}
-    text: "Elena\u2019s handwriting"
+    text: "\u8FD9\u662F\u4EC0\u4E48\u65F6\u5019\u753B\u7684\uFF1F"
   - ID: Noah
     image: {fileID: 0}
-    text: "\uFF08Silence\uFF09"
+    text: "\uFF08\u8F7B\u7B11\uFF09\u5979\u7684\u753B\uFF0C\u8FD8\u662F\u8FD9\u4E48\u597D\u770B\u3002"
   - ID: Noah
     image: {fileID: 0}
-    text: Is this for... me?
+    text: "so light\u2026"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u2026\u2026lighter\uFF1F"

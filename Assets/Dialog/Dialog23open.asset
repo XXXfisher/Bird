@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44c2766d111e26d44862351ead940e8f, type: 3}
-  m_Name: Dialog12
+  m_Name: Dialog23open
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: Why!
+    text: "For me\uFF1F"
   - ID: Noah
     image: {fileID: 0}
-    text: "(Regret)Why didn\u2019t I go and find her back then?"
+    text: "\u2026\u2026\u5199\u4E86\u4E00\u904D\u53C8\u4E00\u904D\u3002"
   - ID: Noah
     image: {fileID: 0}
-    text: If I...
+    text: "\u5979\u5FC3\u91CC\uFF0C\u4E00\u76F4\u90FD\u5728\u60F3\u8FD9\u4E9B\u5417\u3002"
