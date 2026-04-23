@@ -1,0 +1,12 @@
+﻿DialogName,LineIndex,SpeakerName,Text,PortraitSprite
+Dialog10A_receive,0,Noah,门口又有信。,
+Dialog10A_receive,1,Noah,……最近总是这样。,
+Dialog10A_receive,2,Noah,我不知道是谁寄来的。,
+Dialog10A_receive,3,Noah,但它们总会出现在这里。,
+Dialog10A_receive,4,Noah,……先打开看看吧。,
+Dialog10open,0,,,
+Dialog11open,0,,,
+Dialog12open,0,,,
+Dialog13open,0,,,
+Dialog19success,0,Noah,不是恨。,
+Dialog19success,1,Noah,但是她回不来了,
