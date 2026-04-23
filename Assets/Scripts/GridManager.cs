@@ -7,12 +7,13 @@ public class GridManager : MonoBehaviour
     [Header("Grid Settings")]
     public int rows = 3;    
     public int cols = 5;   
-    public float cellSize = 1.0f; 
+    public float cellSize = 1.0f;
 
-    [Header("Rule Settings")]
-    public int[] targetSequence = { 0, 3, 7 }; // 预设的正确序列，策划可以在 Inspector 中修改
+    private int[] currentTargetSequence;
 
     private BoxCollider2D areaCollider;
+
+    public bool hasCompleted = false;
 
     void Awake()
     {
@@ -22,6 +23,12 @@ public class GridManager : MonoBehaviour
         {
             areaCollider.size = new Vector2(cols * cellSize, rows * cellSize);
         }
+    }
+
+    // 传入当前关卡的目标序列
+    public void SetLevelData(LevelData data)
+    {
+        currentTargetSequence = data.targetSequence;
     }
 
     public void TrySnapAndCheck(ArtPiece piece)
@@ -47,8 +54,10 @@ public class GridManager : MonoBehaviour
         CheckSequence();
     }
 
-    private void CheckSequence()
+    public void CheckSequence()
     {
+        if (hasCompleted) return;
+
         // 顺序检测：根据文档确定行数。
         ArtPiece[] allPieces = FindObjectsByType<ArtPiece>(FindObjectsSortMode.None);
 
@@ -59,9 +68,20 @@ public class GridManager : MonoBehaviour
 
         int[] currentSequence = snappedPieces.Select(p => p.pieceID).ToArray();
 
-        if (Enumerable.SequenceEqual(currentSequence, targetSequence))
+        if (currentTargetSequence != null && Enumerable.SequenceEqual(currentSequence, currentTargetSequence))
         {
+            hasCompleted = true;
+
             Debug.Log("正确");
+
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.OnLevelComplete();
+            }
+            else
+            {
+                Debug.LogError("场景中找不到 LevelManager");
+            }
         }
     }
 

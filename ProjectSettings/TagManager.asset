@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ART_PART
   - Scissors
+  - ButtonContainer
+  - Recycle
+  - HoverPanel
   layers:
   - Default
   - TransparentFX
