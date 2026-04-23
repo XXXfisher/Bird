@@ -25,6 +25,9 @@ MonoBehaviour:
   - letterName: 13
     buttonSprite: {fileID: 8389134475083476877, guid: a4d4fd56d588f9c48b9d375247a87236, type: 3}
     prefabToSpawn: {fileID: 7859226081763118647, guid: 7ceab8f5fea48b443a17395bb28a1c50, type: 3}
+  levelType: 0
   dialogData: {fileID: 0}
   isDialogNeeded: 0
   backgroundImage: {fileID: 0}
+  targetSequence: 0100000002000000
+  showHoverPanel: 0
