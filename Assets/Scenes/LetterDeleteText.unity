@@ -252,6 +252,7 @@ RectTransform:
   m_AnchoredPosition: {x: 700, y: -450}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
 --- !u!114 &333449443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +318,8 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 8.42, y: 10.8}
   m_EdgeRadius: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &627440417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +1858,11 @@ MonoBehaviour:
   rows: 3
   cols: 6
   cellSize: 1.8
+<<<<<<< Updated upstream
   targetSequence: 000000000300000007000000
+=======
+  hasCompleted: 0
+>>>>>>> Stashed changes
 --- !u!212 &1832650699
 SpriteRenderer:
   serializedVersion: 2
@@ -1960,8 +1967,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   letterManager: {fileID: 1387263137}
+<<<<<<< Updated upstream
   buttonPrefab: {fileID: 3891005749919822057, guid: c07a3145c5d43474eacb1f331ed24e6e, type: 3}
   buttonContainer: {fileID: 2083430733}
+=======
+  gridManager: {fileID: 0}
+  canvas: {fileID: 0}
+  sceneA: Level_Letter
+  sceneB: Level_Desk
+  buttonPrefab: {fileID: 3891005749919822057, guid: c07a3145c5d43474eacb1f331ed24e6e, type: 3}
+  buttonContainer: {fileID: 2083430733}
+  hoverPanel: {fileID: 0}
+  allLevels: []
+>>>>>>> Stashed changes
   currentLevelData: {fileID: 11400000, guid: 4a9c04e0ddb8adf42b3daf23e5e8d40f, type: 2}
 --- !u!4 &1870351744
 Transform:
@@ -2040,6 +2058,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+<<<<<<< Updated upstream
 --- !u!4 &403206246277511700
 Transform:
   m_ObjectHideFlags: 0
@@ -2336,6 +2355,8 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6, y: 0.49}
   m_EdgeRadius: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2349,7 +2370,10 @@ SceneRoots:
   - {fileID: 1387263136}
   - {fileID: 1870351744}
   - {fileID: 627440422}
+<<<<<<< Updated upstream
   - {fileID: 4765639628307666551}
   - {fileID: 403206246277511700}
   - {fileID: 2720178714330334313}
+=======
+>>>>>>> Stashed changes
   - {fileID: 637477541}

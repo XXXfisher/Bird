@@ -8,6 +8,7 @@ using System.Linq;
 
 public class DialogCsvTool : EditorWindow
 {
+    // 统一都放在 Assets/Dialog
     private string csvPath = "Assets/Dialog/dialog.csv";
     private string outputFolder = "Assets/Dialog";
     private string exportFolder = "Assets/Dialog";
@@ -30,13 +31,25 @@ public class DialogCsvTool : EditorWindow
 
         EditorGUILayout.Space();
 
+        EditorGUILayout.HelpBox(
+            "CSV Format:\nDialogName,LineIndex,SpeakerName,Text,PortraitSprite\n\n" +
+            "SpeakerName -> DialogPiece.ID\n" +
+            "PortraitSprite -> DialogPiece.image (fill sprite name, not path)\n" +
+            "Text -> DialogPiece.text",
+            MessageType.Info
+        );
+
+        EditorGUILayout.Space();
+
         if (GUILayout.Button("Import CSV -> DialogData_SO"))
         {
+            Debug.Log("[DialogCsvTool] Import button clicked");
             ImportCsvToDialogAssets(csvPath, outputFolder);
         }
 
         if (GUILayout.Button("Export DialogData_SO -> CSV"))
         {
+            Debug.Log("[DialogCsvTool] Export button clicked");
             ExportDialogAssetsToCsv(outputFolder, exportFolder);
         }
     }
@@ -53,6 +66,8 @@ public class DialogCsvTool : EditorWindow
 
     public static void ImportCsvToDialogAssets(string csvFilePath, string assetOutputFolder)
     {
+        Debug.Log($"[DialogCsvTool] Start Import. csvFilePath={csvFilePath}, assetOutputFolder={assetOutputFolder}");
+
         if (!File.Exists(csvFilePath))
         {
             Debug.LogError($"[DialogCsvTool] CSV file not found: {csvFilePath}");
@@ -70,6 +85,17 @@ public class DialogCsvTool : EditorWindow
         {
             Debug.LogWarning("[DialogCsvTool] CSV is empty or only contains header.");
             return;
+        }
+
+        // 可选：检查表头是否符合预期
+        string[] header = records[0];
+        if (header.Length < 5)
+        {
+            Debug.LogWarning("[DialogCsvTool] CSV header column count is less than 5.");
+        }
+        else
+        {
+            Debug.Log($"[DialogCsvTool] Header = {string.Join(" | ", header)}");
         }
 
         List<CsvRow> rows = new List<CsvRow>();
@@ -144,6 +170,11 @@ public class DialogCsvTool : EditorWindow
                 dialogAsset = ScriptableObject.CreateInstance<DialogData_SO>();
                 AssetDatabase.CreateAsset(dialogAsset, assetPath);
                 isNew = true;
+                Debug.Log($"[DialogCsvTool] Created new asset: {assetPath}");
+            }
+            else
+            {
+                Debug.Log($"[DialogCsvTool] Updating existing asset: {assetPath}");
             }
 
             if (dialogAsset.dialogPieces == null)
@@ -181,6 +212,8 @@ public class DialogCsvTool : EditorWindow
 
     public static void ExportDialogAssetsToCsv(string dialogFolder, string csvOutputFolder)
     {
+        Debug.Log($"[DialogCsvTool] Start Export. dialogFolder={dialogFolder}, csvOutputFolder={csvOutputFolder}");
+
         EnsureFolderExists(csvOutputFolder);
 
         string[] guids = AssetDatabase.FindAssets("t:DialogData_SO", new[] { dialogFolder });
@@ -190,7 +223,7 @@ public class DialogCsvTool : EditorWindow
             return;
         }
 
-        string csvFilePath = Path.Combine(csvOutputFolder, "dialog_export.csv");
+        string csvFilePath = Path.Combine(csvOutputFolder, "dialog.csv");
 
         List<string> lines = new List<string>
         {
@@ -243,10 +276,22 @@ public class DialogCsvTool : EditorWindow
         Debug.Log($"[DialogCsvTool] Export complete: {csvFilePath}");
     }
 
-    private static Sprite LoadSprite(string imagePath)
+    private static Sprite LoadSpriteByName(string spriteName)
     {
-        if (string.IsNullOrWhiteSpace(imagePath))
+        if (string.IsNullOrWhiteSpace(spriteName))
             return null;
+
+        string searchName = spriteName.Trim();
+
+        string[] guids = AssetDatabase.FindAssets($"{searchName} t:Sprite");
+        if (guids == null || guids.Length == 0)
+        {
+            Debug.LogWarning($"[DialogCsvTool] Sprite not found: {searchName}");
+            return null;
+        }
+
+        string path = AssetDatabase.GUIDToAssetPath(guids[0]);
+        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
 
         string trimmedPath = imagePath.Trim();
         Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(trimmedPath);
