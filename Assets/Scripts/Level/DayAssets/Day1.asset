@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806b9af184826334cab74cb6ed0510c6, type: 3}
   m_Name: Day1
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  letterButtons: []
+  letterButtons:
+  - letterName: 10
+    buttonSprite: {fileID: -5099292496197868168, guid: a606e8bd1ff018e4e951784c711c4821, type: 3}
+    prefabToSpawn: {fileID: 8697958460871459418, guid: 46d0ca600f7afbb46a8f62d54daeb0c8, type: 3}
+  - letterName: 11
+    buttonSprite: {fileID: -2966200626249415253, guid: 5e41c4c189e86ef41a6d97cb04965350, type: 3}
+    prefabToSpawn: {fileID: 247574332267546310, guid: b8a3c9641f73b724590cf62499af3f9a, type: 3}
+  - letterName: 12
+    buttonSprite: {fileID: -1540426309290004842, guid: c219f76bc0c174e4289fb5d62be58329, type: 3}
+    prefabToSpawn: {fileID: 8579459708632371597, guid: d3fdd5a8a8eb0684e9c7877b445ed23b, type: 3}
+  - letterName: 13
+    buttonSprite: {fileID: 8389134475083476877, guid: a4d4fd56d588f9c48b9d375247a87236, type: 3}
+    prefabToSpawn: {fileID: 7859226081763118647, guid: 7ceab8f5fea48b443a17395bb28a1c50, type: 3}
   dialogData: {fileID: 0}
   isDialogNeeded: 0
   backgroundImage: {fileID: 0}
