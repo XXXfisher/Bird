@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 15527e67ea929074f91fe3f67ee93bd1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5208378930200538864
+    second: "\u526A\u6389I just go for_0"
+  - first:
+      213: -5064617179630636035
+    second: "\u526A\u6389I just go for_1"
+  - first:
+      213: -3815955732037187176
+    second: "\u526A\u6389I just go for_2"
+  - first:
+      213: -124976291477452149
+    second: "\u526A\u6389I just go for_3"
+  - first:
+      213: -2784954450352364533
+    second: "\u526A\u6389I just go for_4"
+  - first:
+      213: -414241675673625464
+    second: "\u526A\u6389I just go for_5"
+  - first:
+      213: -3418729393906266777
+    second: "\u526A\u6389I just go for_6"
+  - first:
+      213: -7189438335287614960
+    second: "\u526A\u6389I just go for_7"
+  - first:
+      213: -6404725288548917544
+    second: "\u526A\u6389I just go for_8"
+  - first:
+      213: -2158588679653088122
+    second: "\u526A\u6389I just go for_9"
+  - first:
+      213: 7180662435942122601
+    second: "\u526A\u6389I just go for_10"
+  - first:
+      213: -1963248996679981642
+    second: "\u526A\u6389I just go for_11"
+  - first:
+      213: -8614284448704096341
+    second: "\u526A\u6389I just go for_12"
+  - first:
+      213: -5827414382800789531
+    second: "\u526A\u6389I just go for_13"
+  - first:
+      213: -8690102457413680173
+    second: "\u526A\u6389I just go for_14"
+  - first:
+      213: 8504909045813393098
+    second: "\u526A\u6389I just go for_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_0"
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 903
+        width: 25
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe6b36ba01e74840800000000000000
+      internalID: 5208378930200538864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_1"
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1035
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df376c4328dd6b9b0800000000000000
+      internalID: -5064617179630636035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_2"
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1056
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899ce41ca700b0bc0800000000000000
+      internalID: -3815955732037187176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_3"
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1034
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a042d99bef34ef0800000000000000
+      internalID: -124976291477452149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_4"
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1030
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04aa17ceaad959d0800000000000000
+      internalID: -2784954450352364533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_5"
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 920
+        width: 47
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c9f460461504af0800000000000000
+      internalID: -414241675673625464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_6"
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 74
+        width: 1391
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dc70dbabb3e80d0800000000000000
+      internalID: -3418729393906266777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_7"
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 963
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0122b92ecebf93c90800000000000000
+      internalID: -7189438335287614960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_8"
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 774
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de9414a848dd17a0800000000000000
+      internalID: -6404725288548917544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_9"
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 700
+        width: 26
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684291558072b02e0800000000000000
+      internalID: -2158588679653088122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_10"
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 675
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9644252d076d6a360800000000000000
+      internalID: 7180662435942122601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_11"
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 672
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b56f33707321c4e0800000000000000
+      internalID: -1963248996679981642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_12"
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 636
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba712d03fe9e37880800000000000000
+      internalID: -8614284448704096341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_13"
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 626
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef182a6e7dd02fa0800000000000000
+      internalID: -5827414382800789531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_14"
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 19
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3cb1c6bdd866780800000000000000
+      internalID: -8690102457413680173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u526A\u6389I just go for_15"
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 0
+        width: 64
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6b6ba57b1870670800000000000000
+      internalID: 8504909045813393098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u526A\u6389I just go for_0": 5208378930200538864
+      "\u526A\u6389I just go for_1": -5064617179630636035
+      "\u526A\u6389I just go for_10": 7180662435942122601
+      "\u526A\u6389I just go for_11": -1963248996679981642
+      "\u526A\u6389I just go for_12": -8614284448704096341
+      "\u526A\u6389I just go for_13": -5827414382800789531
+      "\u526A\u6389I just go for_14": -8690102457413680173
+      "\u526A\u6389I just go for_15": 8504909045813393098
+      "\u526A\u6389I just go for_2": -3815955732037187176
+      "\u526A\u6389I just go for_3": -124976291477452149
+      "\u526A\u6389I just go for_4": -2784954450352364533
+      "\u526A\u6389I just go for_5": -414241675673625464
+      "\u526A\u6389I just go for_6": -3418729393906266777
+      "\u526A\u6389I just go for_7": -7189438335287614960
+      "\u526A\u6389I just go for_8": -6404725288548917544
+      "\u526A\u6389I just go for_9": -2158588679653088122
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
