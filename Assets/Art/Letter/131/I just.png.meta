@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8b688b307cea7b4db181770d431be5a
+guid: ee79491d5e21cfa48a79fcf00b2317b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5372334463665360513
-    second: not_0
+      213: 7140987896918272593
+    second: I just_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -56,7 +56,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -126,37 +126,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: not_0
+      name: I just_0
       rect:
         serializedVersion: 2
-        x: 593
-        y: 481
-        width: 165
-        height: 128
+        x: 584
+        y: 325
+        width: 278
+        height: 166
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18ecc591bbd5e8a40800000000000000
-      internalID: 5372334463665360513
+      spriteID: 15a6d2d58a2e91360800000000000000
+      internalID: 7140987896918272593
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -417, y: -75}
-      - {x: -170, y: -75}
-      - {x: -170, y: 114}
-      - {x: -417, y: 114}
+    outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -165,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      not_0: 5372334463665360513
+      I just_0: 7140987896918272593
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
