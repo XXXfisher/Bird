@@ -23,7 +23,10 @@ public class LevelManager : MonoBehaviour
     public Transform buttonContainer;
 
     [Header("第五天机制")]
-    public GameObject hoverPanel; 
+    public GameObject hoverPanel;
+
+    [Header("第六天机制")]
+    public GameObject InputCanvas;
 
     [Header("关卡数据")]
     public List<LevelData> allLevels;
@@ -104,6 +107,18 @@ public class LevelManager : MonoBehaviour
         if (hoverPanel != null)
         {
             hoverPanel.SetActive(data.showHoverPanel);
+        }
+
+        //========== 第六天机制：设置输入界面 ========
+        if (InputCanvas != null)
+        {
+            InputCanvas.SetActive(data.showDay6Input);
+
+            //if (data.showDay6Input)
+            //{
+            //    // 如果你写了 Day6InputManager，可以在这里调用它的初始化方法
+            //    // InputCanvas.GetComponent<Day6InputManager>().ResetUI();
+            //}
         }
 
         //========== 前四天机制：生成按钮并传递谜底给 GridManager ========
