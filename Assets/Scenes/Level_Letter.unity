@@ -331,6 +331,8 @@ MonoBehaviour:
   allLevels:
   - {fileID: 11400000, guid: 4a9c04e0ddb8adf42b3daf23e5e8d40f, type: 2}
   - {fileID: 11400000, guid: 6e2a8689d246c904794a9b22ed8aa220, type: 2}
+  - {fileID: 11400000, guid: 64bddbaf13ae70341bb11c52d1879ac6, type: 2}
+  - {fileID: 11400000, guid: 06d832b51725d544ca7de6f87c4cf0c7, type: 2}
   - {fileID: 11400000, guid: 726af5e5e9a879f43a3aab9341bc2544, type: 2}
   - {fileID: 11400000, guid: ca19d6b989856e4408bf9f2dc0f86ddb, type: 2}
   currentLevelData: {fileID: 11400000, guid: 4a9c04e0ddb8adf42b3daf23e5e8d40f, type: 2}

@@ -21,7 +21,7 @@ MonoBehaviour:
     prefabToSpawn: {fileID: 8659108969281768, guid: 5db5b6d50e5c90c4097fb485c814ddef, type: 3}
   - letterName: 22
     buttonSprite: {fileID: -7371509505491802261, guid: 541ff61eff8aca940a6301e710030fea, type: 3}
-    prefabToSpawn: {fileID: 1707343135962474610, guid: 72d46001d516be342a3f4027c5772bf0, type: 3}
+    prefabToSpawn: {fileID: 514226891283247698, guid: ce2140c90e6b9234bbd8294e4e56074a, type: 3}
   - letterName: 23
     buttonSprite: {fileID: 2720535173406242035, guid: b389c1c2e95382b43ac813822d308d65, type: 3}
     prefabToSpawn: {fileID: 1593739074436499695, guid: bb7d6bb8178ee674e87dd3f43a920641, type: 3}

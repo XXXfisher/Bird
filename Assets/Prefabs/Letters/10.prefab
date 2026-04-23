@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 2644743578923440619}
   - component: {fileID: 3599231278312313540}
   - component: {fileID: 3083618047152253199}
+  - component: {fileID: 7761191866184271956}
   m_Layer: 0
   m_Name: I_0 (1)
   m_TagString: ART_PART
@@ -337,6 +338,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.0096385, y: 4.26}
   m_EdgeRadius: 0
+--- !u!114 &7761191866184271956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3367494921707553884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb0677c7ef9abd4a9ef1e9356f90814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverScale
+  hoverScale: 1.05
+  speed: 8
 --- !u!1 &3458534114440073905
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +637,7 @@ GameObject:
   - component: {fileID: 8109280558873055406}
   - component: {fileID: 4951331387108428666}
   - component: {fileID: 7203650811587520798}
+  - component: {fileID: 1014483904755202880}
   m_Layer: 0
   m_Name: hate_0
   m_TagString: ART_PART
@@ -763,6 +779,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.349036, y: 4.4}
   m_EdgeRadius: 0
+--- !u!114 &1014483904755202880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4336833175680069380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb0677c7ef9abd4a9ef1e9356f90814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverScale
+  hoverScale: 1.05
+  speed: 8
 --- !u!1 &4745306498001695752
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +805,7 @@ GameObject:
   - component: {fileID: 4951942026872940450}
   - component: {fileID: 4705644255034769676}
   - component: {fileID: 7173557995315583666}
+  - component: {fileID: 1217109581199552183}
   m_Layer: 0
   m_Name: you_0 (1)
   m_TagString: ART_PART
@@ -916,6 +947,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.3818874, y: 4.46}
   m_EdgeRadius: 0
+--- !u!114 &1217109581199552183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4745306498001695752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb0677c7ef9abd4a9ef1e9356f90814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverScale
+  hoverScale: 1.05
+  speed: 8
 --- !u!1 &5749640577650710951
 GameObject:
   m_ObjectHideFlags: 0
