@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c2766d111e26d44862351ead940e8f, type: 3}
   m_Name: Dialog49success
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
-  dialogPieces: []
+  dialogPieces:
+  - ID: Noah
+    image: {fileID: 0}
+    text: The accident was just that.
+  - ID: Noah
+    image: {fileID: 0}
+    text: This wasn't because of you.
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u2026\u2026\u4E0D\u662F\u56E0\u4E3A\u6211\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u5979\u4E0D\u662F\u56E0\u4E3A\u6211\uFF0C\u624D\u79BB\u5F00\u7684\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u53EF\u6211\u4E3A\u4EC0\u4E48\u8FD8\u662F\u89C9\u5F97\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u662F\u6211\u6CA1\u80FD\u7559\u4F4F\u5979\u3002"

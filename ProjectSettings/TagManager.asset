@@ -9,6 +9,7 @@ TagManager:
   - ButtonContainer
   - Recycle
   - HoverPanel
+  - Day5
   layers:
   - Default
   - TransparentFX

@@ -19,4 +19,4 @@ MonoBehaviour:
   backgroundImage: {fileID: 0}
   targetSequence: 
   showHoverPanel: 0
-  showDay6Input: 0
+  showDay6Input: 1

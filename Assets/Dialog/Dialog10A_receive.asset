@@ -10,6 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44c2766d111e26d44862351ead940e8f, type: 3}
-  m_Name: Dialog10A_receive
+<<<<<<<< HEAD:Assets/Dialog/Dialog11open.asset
+  m_Name: Dialog11open
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces: []
+========
+  m_Name: Dialog10A_receive
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
+  dialogPieces:
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u95E8\u53E3\u53C8\u6709\u4FE1\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u2026\u2026\u6700\u8FD1\u603B\u662F\u8FD9\u6837\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u4E0D\u77E5\u9053\u662F\u8C01\u5BC4\u6765\u7684\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u53EF\u5B83\u4EEC\u603B\u4F1A\u51FA\u73B0\u5728\u8FD9\u91CC\u3002"
+  - ID: Noah
+    image: {fileID: 0}
+    text: "\u2026\u2026\u5148\u6253\u5F00\u770B\u770B\u5427\u3002"
+>>>>>>>> main:Assets/Dialog/Dialog10A_receive.asset

@@ -10,24 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44c2766d111e26d44862351ead940e8f, type: 3}
+<<<<<<<< HEAD:Assets/Dialog/Dialog12open.asset
+  m_Name: Dialog12open
+  m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
+  dialogPieces: []
+========
   m_Name: Dialog69success
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: You saw me.
-  - ID: Noah
-    image: {fileID: 0}
-    text: I loved you.
-  - ID: Noah
-    image: {fileID: 0}
     text: "\u2026\u2026\u6211\u77E5\u9053\u3002 "
-  - ID: Noah
-    image: {fileID: 0}
-    text: "\u2026\u2026\u6211\u77E5\u9053\u3002 "
-  - ID: Noah
-    image: {fileID: 0}
-    text: "\u6211\u90FD\u77E5\u9053\u3002 "
   - ID: Noah
     image: {fileID: 0}
     text: "\u6211\u90FD\u77E5\u9053\u3002 "
@@ -36,7 +29,5 @@ MonoBehaviour:
     text: "\u73B0\u5728\u8F6E\u5230\u6211\u544A\u8BC9\u4F60\u4E86\u3002 "
   - ID: Noah
     image: {fileID: 0}
-    text: "Elena, \u8BF7\u8F93\u5165\u6587\u672C"
-  - ID: Noah
-    image: {fileID: 0}
     text: Elena, _________
+>>>>>>>> main:Assets/Dialog/Dialog69success.asset

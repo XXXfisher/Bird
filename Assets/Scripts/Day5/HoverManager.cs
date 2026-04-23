@@ -4,32 +4,20 @@ using System.Collections.Generic;
 
 public class HoverManager : MonoBehaviour
 {
-    public static HoverManager Instance;
-
-    [Header("文字UI")]
-    public GameObject textObj;
-    public TextMeshProUGUI textUI;
+    //public static HoverManager Instance;
 
     [Header("随机摆放")]
     public RectTransform panel;
     public List<RectTransform> items;
 
+    [Header("统计设置")]
+    public int targetCount = 4; // 目标碰撞次数
+    private HashSet<int> touchedIDs = new HashSet<int>(); // 存储已碰撞物体的唯一ID
+    private bool isTaskCompleted = false; // 防止重复触发Debug
+
+
     public int maxTry = 100;
 
-    void Awake()
-    {
-        if (LevelManager.Instance != null)
-        {
-            LevelManager.Instance.hoverPanel = this.gameObject;
-
-            // 顺便根据当前的关卡数据决定初始显隐状态
-            bool shouldShow = LevelManager.Instance.currentLevelData.showHoverPanel;
-            this.gameObject.SetActive(shouldShow);
-        }
-        Instance = this;
-        textObj.SetActive(false);
-
-    }
 
     void Start()
     {
@@ -37,26 +25,7 @@ public class HoverManager : MonoBehaviour
         RandomPlaceItems();
     }
 
-    void Update()
-    {
-        // 让文字跟随鼠标（可选但推荐）
-        if (textObj.activeSelf)
-        {
-            textObj.transform.position = Input.mousePosition;
-        }
-    }
 
-    // ===== Hover 控制 =====
-    public void Show(string msg)
-    {
-        textUI.text = msg;
-        textObj.SetActive(true);
-    }
-
-    public void Hide()
-    {
-        textObj.SetActive(false);
-    }
 
     // ===== 随机摆放（不重叠）=====
     void RandomPlaceItems()
@@ -126,6 +95,34 @@ public class HoverManager : MonoBehaviour
             {
                 items.Add(rt);
             }
+        }
+    }
+
+    public void ReportTouch(int id)
+    {
+        if (isTaskCompleted) return;
+
+        // 如果这个 ID 还没被记录过
+        if (!touchedIDs.Contains(id))
+        {
+            touchedIDs.Add(id);
+            Debug.Log($"<color=cyan>进度更新：</color> 碰到了新 Collider (ID: {id})，当前进度: {touchedIDs.Count}/{targetCount}");
+
+            if (touchedIDs.Count >= targetCount)
+            {
+                isTaskCompleted = true;
+                OnAllTargetsTouched();
+            }
+        }
+    }
+
+    private void OnAllTargetsTouched()
+    {
+        Debug.Log("<color=green>任务完成！</color>");
+
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.OnLevelComplete();
         }
     }
 }

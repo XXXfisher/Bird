@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 6f42e615bcdfe28409418a16c7d8d991
+<<<<<<<< HEAD:Assets/Dialog/Dialog10open.asset.meta
+guid: d08059fe60bcf16419624af88610604a
+========
+guid: 33515cc04f0a3d54ab91c96acd72bddc
+>>>>>>>> main:Assets/Dialog/Dialog10A_receive.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
