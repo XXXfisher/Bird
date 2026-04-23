@@ -192,7 +192,7 @@ public class DialogCsvTool : EditorWindow
                 {
                     ID = row.speakerName,
                     text = row.text,
-                    image = LoadSprite(row.portraitSprite)
+                    image = LoadSpriteByName(row.portraitSprite)
                 };
 
                 dialogAsset.dialogPieces.Add(piece);
@@ -293,12 +293,9 @@ public class DialogCsvTool : EditorWindow
         string path = AssetDatabase.GUIDToAssetPath(guids[0]);
         Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
 
-        string trimmedPath = imagePath.Trim();
-        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(trimmedPath);
-
         if (sprite == null)
         {
-            Debug.LogWarning($"[DialogCsvTool] Sprite not found: {trimmedPath}");
+            Debug.LogWarning($"[DialogCsvTool] Failed to load sprite at path: {path}");
         }
 
         return sprite;
