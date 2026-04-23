@@ -377,7 +377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &154601190
 Animator:
   serializedVersion: 7
@@ -639,7 +639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &722570723
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1058,6 +1058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeskManager
   backgroundUI: {fileID: 814361302}
   spawnPoint: {fileID: 1296468464}
+  BirdAnim: {fileID: 154601189}
   D1: {fileID: 7548539682928623886, guid: 7570a71cde57afe46a254c2dcae6e7cc, type: 3}
   D2: {fileID: 5447472718004740149, guid: 1b7bcea5d30c2084a8a81d4448067922, type: 3}
   D3: {fileID: 9072822018663316598, guid: 2944c649218d5ac4ebb119991d54cf50, type: 3}

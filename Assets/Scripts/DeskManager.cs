@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using System.Collections;
 
 public class DeskManager : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class DeskManager : MonoBehaviour
 
     [Header("配置与引用")]
     public Image backgroundUI;
-    public Transform spawnPoint; // 生成物体的父级或位置
+    public Transform spawnPoint;
+    public GameObject BirdAnim;
 
     [Header("所有的桌子预制体库")]
     public GameObject D1, D2, D3, D4;
@@ -17,13 +19,16 @@ public class DeskManager : MonoBehaviour
 
     void Awake()
     {
+        //BirdAnim.SetActive(false);
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
     }
 
     private void Start()
     {
         RefreshLevelElements();
+        StartCoroutine(BirdAndLetter());
     }
 
     public void RefreshLevelElements()
@@ -38,8 +43,6 @@ public class DeskManager : MonoBehaviour
             backgroundUI.sprite = data.backgroundImage;
         }
 
-        // 2. 根据 LevelData 的内容生成桌子
-        SpawnDeskByData(data);
     }
 
     private void SpawnDeskByData(LevelData data)
@@ -49,14 +52,12 @@ public class DeskManager : MonoBehaviour
 
         GameObject prefabToSpawn = null;
 
-        // 方法 A：根据 LevelData 的名字判断（如果你的 Asset 名字叫 "Day1", "Day2"）
         string dataName = data.name;
         if (dataName.Contains("Day1")) prefabToSpawn = D1;
         else if (dataName.Contains("Day2")) prefabToSpawn = D2;
         else if (dataName.Contains("Day3")) prefabToSpawn = D3;
         else if (dataName.Contains("Day4")) prefabToSpawn = D4;
 
-        // 方法 B (更推荐)：在 LevelData 中直接添加一个字段（见下方补充）
 
         if (prefabToSpawn != null)
         {
@@ -64,4 +65,20 @@ public class DeskManager : MonoBehaviour
             currentSpawnedDesk.transform.SetParent(this.transform);
         }
     }
+
+    IEnumerator BirdAndLetter()
+    {
+        LevelData data = LevelManager.Instance.currentLevelData;
+
+        yield return new WaitForSeconds(2f);
+        if (BirdAnim != null)
+        {
+            BirdAnim.SetActive(true);
+            yield return new WaitForSeconds(1f); 
+            //BirdAnim.SetActive(false);
+        }
+        yield return new WaitForSeconds(2f); 
+        SpawnDeskByData(data);
+    }
+
 }
