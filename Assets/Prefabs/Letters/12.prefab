@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 421850061941433329}
   - component: {fileID: 1992088013774567824}
   - component: {fileID: 2765562704864562934}
+  - component: {fileID: 1191913048935059430}
   m_Layer: 0
   m_Name: couldn't_0
   m_TagString: ART_PART
@@ -454,8 +455,8 @@ Transform:
   m_GameObject: {fileID: 6217397152556179001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.74, y: 4.74, z: 4.74}
+  m_LocalPosition: {x: -2.31, y: -0.49, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 595707919061529460}
@@ -507,7 +508,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4874708715374335094, guid: 0d45965a38bcd0a4db2e54670b43224d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -579,6 +580,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.56, y: 0.28}
   m_EdgeRadius: 0
+--- !u!114 &1191913048935059430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6217397152556179001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb0677c7ef9abd4a9ef1e9356f90814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverScale
+  hoverScale: 1.05
+  speed: 8
 --- !u!1 &6480486578382363680
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,16 +694,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8579459708632371597}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.51, y: 0.51, z: 0.51}
+  m_LocalRotation: {x: -0, y: -0, z: -0.037169974, w: 0.999309}
+  m_LocalPosition: {x: 0.03, y: 0.34, z: 0}
+  m_LocalScale: {x: 0.744396, y: 0.744396, z: 0.744396}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 595707919061529460}
   - {fileID: 5235052574665966441}
   - {fileID: 5819753634122737189}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.26}
 --- !u!114 &1205893877843499764
 MonoBehaviour:
   m_ObjectHideFlags: 0
