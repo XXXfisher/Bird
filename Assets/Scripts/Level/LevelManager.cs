@@ -50,20 +50,29 @@ public class LevelManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // 无论在哪个场景，只要有关卡数据，就执行一次基础的状态重置（例如显隐控制）
+        if (currentLevelData != null)
+        {
+            // 显式根据数据控制显隐，防止跨场景残留
+
+        }
 
         if (scene.name == sceneB)
         {
             if (canvas != null) canvas.SetActive(false);
-            //return;
+            if (hoverPanel != null) hoverPanel.SetActive(false);
+            if (InputCanvas != null) InputCanvas.SetActive(false);
+
         }
 
-        // 如果当前是 Level_Letter 场景，我们需要重新找回 UI 引用
         if (scene.name == sceneA)
         {
+            if (canvas != null) canvas.SetActive(true); // 确保切回来时 Canvas 是开的
+            if (hoverPanel != null) hoverPanel.SetActive(currentLevelData.showHoverPanel);
+            if (InputCanvas != null) InputCanvas.SetActive(currentLevelData.showDay6Input);
             RefreshReferences();
             LoadLevel(currentLevelData);
         }
-
     }
 
     void RefreshReferences()
@@ -73,8 +82,13 @@ public class LevelManager : MonoBehaviour
 
         letterManager = FindFirstObjectByType<LetterManager>();
 
-        //GameObject p = GameObject.FindWithTag("HoverPanel"); 
+        //GameObject p = GameObject.FindWithTag("Day5");
         //if (p != null) hoverPanel = p;
+        if (hoverPanel == null)
+        {
+            Transform t = transform.Find("HoverPanel"); // 确保名字和 Hierarchy 里一致
+            if (t != null) hoverPanel = t.gameObject;
+        }
     }
 
 
