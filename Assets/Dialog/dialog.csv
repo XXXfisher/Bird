@@ -1,0 +1,168 @@
+﻿DialogName,LineIndex,ID,Text,ImagePath
+Dialog10A_receive,0,Noah,门口又有信。,Noah_Neutral
+Dialog10A_receive,1,Noah,……最近总是这样。,Noah_Neutral
+Dialog10A_receive,2,Noah,不知道是谁寄来的。,Noah_Neutral
+Dialog10A_receive,3,Noah,可它们总会出现在这里。,Noah_Neutral
+Dialog10A_receive,4,Noah,……先打开看看吧。,Noah_Neutral
+
+Dialog10open,0,Noah,……,Noah_Recognition
+Dialog10open,1,Noah,是她的字。,Noah_Recognition
+Dialog10open,2,Noah,我记得这张纸。,Noah_Sad
+Dialog10open,3,Noah,这张纸……边缘像是能剪开。,Noah_Neutral
+Dialog10open,4,Noah,那天晚上。,Noah_Sad
+Dialog10open,5,Noah,她留下这个，就出门了。,Noah_Sad
+Dialog10open,6,Noah,我只当，是她一时的气话。,Noah_Regret
+
+Dialog11open,0,Noah,……管理处？,Noah_Recognition
+Dialog11open,1,Noah,原来别人也都听见了。,Noah_Sad
+Dialog11open,2,Noah,那段时间……,Noah_Sad
+Dialog11open,3,Noah,我们总是在吵。,Noah_Regret
+
+Dialog12open,0,Noah,……不。,Noah_Crying
+Dialog12open,1,Noah,别是这个。,Noah_Crying
+Dialog12open,2,Noah,我还是不敢打开。,Noah_Sad
+Dialog12open,3,Noah,那天晚上，我连她最后一面都没见到。,Noah_Regret
+Dialog12open,4,Noah,她一定还在怪我吧。,Noah_Crying
+
+Dialog13open,0,Noah,车票？,Noah_Recognition
+Dialog13open,1,Noah,单程。,Noah_Recognition
+Dialog13open,2,Noah,她原本，是想走的。,Noah_Sad
+Dialog13open,3,Noah,……背后写了字。,Noah_Recognition
+Dialog13open,4,Noah,“Not…...I just…”,Noah_Recognition
+Dialog13open,5,Noah,……她想说什么？,Noah_Recognition
+Dialog13open,6,Noah,……话只写了一半。,Noah_Recognition
+Dialog13open,7,Noah,拼起来，会是一句完整的话吗？,Noah_Recognition
+
+Dialog19success,0,Noah,不是恨。,Noah_Crying
+Dialog19success,1,Noah,可她，再也回不来了。,Noah_Crying
+
+Dialog20Areceive,0,Noah,门口还有信。,Noah_Neutral
+Dialog20Areceive,1,Noah,……昨天之后，我以为不会再有了。,Noah_Neutral
+Dialog20Areceive,2,Noah,可还是来了。,Noah_Neutral
+Dialog20Areceive,3,Noah,好像有些事……还没结束。,Noah_Sad
+Dialog20Areceive,4,Noah,……打开看看吧。,Noah_Neutral
+
+Dialog20open,0,Noah,……公司的邮件。,Noah_Recognition
+Dialog20open,1,Noah,升职通知。,Noah_Recognition
+Dialog20open,2,Noah,那段时间。,Noah_Sad
+Dialog20open,3,Noah,我几乎天天都泡在公司。,Noah_Sad
+Dialog20open,4,Noah,我以为再努力一点。,Noah_Regret
+Dialog20open,5,Noah,一切就会好起来。,Noah_Regret
+
+Dialog21open,0,Noah,……工资单。,Noah_Recognition
+Dialog21open,1,Noah,46小时加班。,Noah_Recognition
+Dialog21open,2,Noah,原来已经这么多了。,Noah_Sad
+Dialog21open,3,Noah,那些夜晚，我几乎都记不清了。,Noah_Regret
+Dialog21open,4,Noah,只记得，一直很累。,Noah_Sad
+
+Dialog22open,0,Noah,又是咖啡。,Noah_Recognition
+Dialog22open,1,Noah,凌晨三点。,Noah_Sad
+Dialog22open,2,Noah,……两杯。,Noah_Recognition
+Dialog22open,3,Noah,那时候她还陪着我。,Noah_Sad
+Dialog22open,4,Noah,我却从来没好好在意过。,Noah_Regret
+
+Dialog23open,0,Noah,"For me？",Noah_Recognition
+Dialog23open,1,Noah,……写了一遍又一遍。,Noah_Recognition
+Dialog23open,2,Noah,她心里，一直都在想这些吗。,Noah_Sad
+
+Dialog29success,0,Noah,"You've done too much for me.",Noah_Recognition
+Dialog29success,1,Noah,可是Elena……这本来就是我该做的。,Noah_Sad
+Dialog29success,2,Noah,我从来没觉得那是负担。,Noah_Regret
+Dialog29success,3,Noah,我只是想让你过得轻松一点。,Noah_Sad
+
+Dialog30A_receive,0,Noah,……你又来了。,Noah_Soft
+Dialog30A_receive,1,Noah,今天，也是你把信送来的。,Noah_Soft
+Dialog30A_receive,2,Noah,我好像，已经开始习惯你的声音了。,Noah_Soft
+Dialog30A_receive,3,Noah,,Noah_Soft
+Dialog30A_receive,4,Noah,……今天，你又想让我明白什么？,Noah_Soft
+
+Dialog30open,0,Noah,……她的速写。,Noah_Recognition
+Dialog30open,1,Noah,这是什么时候画的？,Noah_Recognition
+Dialog30open,2,Noah,（轻笑）她的画，还是这么好看。,Noah_Soft
+Dialog30open,3,Noah,so light…,Noah_Recognition
+Dialog30open,4,Noah,……lighter？,Noah_Sad
+
+Dialog31open,0,Noah,……这是写给她的便签。,Noah_Recognition
+Dialog31open,1,Noah,deadline？,Noah_Recognition
+Dialog31open,2,Noah,她从来都没跟我说过。,Noah_Sad
+Dialog31open,3,Noah,原来那段时间。,Noah_Sad
+Dialog31open,4,Noah,她也一直在一个人硬撑。,Noah_Regret
+
+Dialog32open,0,Noah,you look tired…,Noah_Recognition
+Dialog32open,1,Noah,maybe I should stay…,Noah_Sad
+Dialog32open,2,Noah,stay 被划掉了。,Noah_Recognition
+Dialog32open,3,Noah,It’s ok…,Noah_Sad
+Dialog32open,4,Noah,Without—— me.,Noah_Recognition
+Dialog32open,5,Noah,……她那时候，就在想这些吗？,Noah_Crying
+
+Dialog39success,0,Noah,"I thought you'd be lighter without me.",Noah_Recognition
+Dialog39success,1,Noah,……你以为，没有你我会更轻松。,Noah_Sad
+Dialog39success,2,Noah,Elena……不是这样的。,Noah_Crying
+Dialog39success,3,Noah,我只是想把一切都扛下来。,Noah_Regret
+Dialog39success,4,Noah,可我从没想过，会失去你。,Noah_Crying
+
+Dialog40A_receive,0,Noah,……你来了。,Noah_Soft
+Dialog40A_receive,1,Noah,今天也有信。,Noah_Soft
+Dialog40A_receive,2,Noah,我已经开始，等你出现了。,Noah_Sad
+Dialog40A_receive,3,Noah,好像只要你来。,Noah_Soft
+Dialog40A_receive,4,Noah,我就还能再多记得她一点。,Noah_Recognition
+
+Dialog40open,0,Noah,……她的日记页。,Noah_Recognition
+Dialog40open,1,Noah,她试着做松饼？,Noah_Recognition
+Dialog40open,2,Noah,（轻笑）她总说自己一定能学会。,Noah_Soft
+Dialog40open,3,Noah,因为我总在加班。,Noah_Sad
+Dialog40open,4,Noah,她想帮我，分担一点。,Noah_Regret
+Dialog40open,5,Noah,because of you…,Noah_Recognition
+Dialog40open,6,Noah,……她写下这句话的时候。,Noah_Sad
+Dialog40open,7,Noah,到底在想什么？,Noah_Regret
+
+Dialog41open,0,Noah,……新闻报道。,Noah_Recognition
+Dialog41open,1,Noah,那天晚上的事故。,Noah_Sad
+Dialog41open,2,Noah,转弯时，没有注意到行人。,Noah_Recognition
+Dialog41open,3,Noah,只是……一场意外。,Noah_Sad
+Dialog41open,4,Noah,可我永远都没法这样说服自己。,Noah_Regret
+
+Dialog42open,0,Noah,警方报告。,Noah_Recognition
+Dialog42open,1,Noah,Conclusion…,Noah_Recognition
+Dialog42open,2,Noah,The incident was just that—an accident.,Noah_Recognition
+Dialog42open,3,Noah,没有别的原因。,Noah_Sad
+Dialog42open,4,Noah,也没有谁该为此负责。,Noah_Regret
+
+Dialog43open,0,Noah,……医疗记录。,Noah_Recognition
+Dialog43open,1,Noah,No related individuals present.,Noah_Recognition
+Dialog43open,2,Noah,她身边，一个人都没有。,Noah_Sad
+Dialog43open,3,Noah,她独自被送进医院。,Noah_Crying
+Dialog43open,4,Noah,而我那时候……什么都不知道。,Noah_Regret
+
+Dialog49success,0,Noah,"The accident was just that.",Noah_Recognition
+Dialog49success,1,Noah,"This wasn't because of you.",Noah_Recognition
+Dialog49success,2,Noah,……不是因为我。,Noah_Sad
+Dialog49success,3,Noah,她不是因为我，才离开的。,Noah_Crying
+Dialog49success,4,Noah,可我为什么还是觉得。,Noah_Regret
+Dialog49success,5,Noah,是我没能留住她。,Noah_Crying
+
+Dialog50A_receive,0,Noah,……今天没有信。,Noah_Neutral
+Dialog50A_receive,1,Noah,你没有来。,Noah_Sad
+Dialog50A_receive,2,Noah,门口什么都没有。,Noah_Neutral
+Dialog50A_receive,3,Noah,是出了什么意外吗。,Noah_Recognition
+
+Dialog59success,0,Noah,"Still here…",Noah_Recognition
+Dialog59success,1,Noah,"with you.",Noah_Recognition
+Dialog59success,2,Noah,……你来了。 ,Noah_Soft
+Dialog59success,3,Noah,一直把这些信带来的人。 ,Noah_Sad
+Dialog59success,4,Noah,就是你，对吗？ ,Noah_Recognition
+Dialog59success,5,Noah,那只白鸟…… ,Noah_Sad
+Dialog59success,6,Noah,是你吗，Elena？ ,Noah_Crying
+Dialog59success,7,Noah,……求你告诉我。 ,Noah_Soft
+
+Dialog60A_receive,0,Noah,……你来了。,Noah_Soft
+Dialog60A_receive,1,Noah,这是……我们最爱的电影。 ,Noah_Soft
+Dialog60A_receive,2,Noah,你要走了吗？ ,Noah_Crying
+
+Dialog60open,0,Noah,"You saw me.",Noah_Recognition
+Dialog60open,1,Noah,"I loved you.",Noah_Crying
+
+Dialog69success,2,Noah,……我知道。 ,Noah_Sad
+Dialog69success,3,Noah,我都知道。 ,Noah_Soft
+Dialog69success,3,Noah,现在轮到我告诉你了。 ,Noah_Soft
+Dialog69success,4,Noah,"Elena, _________",Noah_Crying

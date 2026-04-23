@@ -29,4 +29,7 @@ public class LevelData : ScriptableObject
 
     [Header("第五天")]
     public bool showHoverPanel;
+
+    [Header("第六天")]
+    public bool showDay6Input;
 }
