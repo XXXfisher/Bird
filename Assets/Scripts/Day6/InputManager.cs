@@ -14,6 +14,11 @@ public class InputManager : MonoBehaviour
     [Header("海报显示时间")]
     public float waitTime = 3f;
 
+    [Header("结尾 Prefab")]
+    public GameObject endingPrefab;      // 拖结尾Prefab
+    public Transform endingParent;       // 拖Canvas进来
+
+
 
     void Start()
     {
@@ -58,6 +63,24 @@ public class InputManager : MonoBehaviour
 
         Debug.Log("玩家输入完成: " + result);
 
-        // 结束逻辑？
+        // 隐藏输入区域
+        if (inputGroup != null)
+            inputGroup.SetActive(false);
+
+        // 生成结尾Prefab
+        if (endingPrefab != null && endingParent != null)
+        {
+            GameObject endingObj = Instantiate(endingPrefab, endingParent);
+
+            EndingCreditsPrefab ending = endingObj.GetComponent<EndingCreditsPrefab>();
+            if (ending != null)
+            {
+                ending.SetPlayerInput(result);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("结尾Prefab或父物体没有设置！");
+        }
     }
 }
