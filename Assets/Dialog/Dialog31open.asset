@@ -15,16 +15,16 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u8FD9\u662F\u5199\u7ED9\u5979\u7684\u4FBF\u7B7E\u3002"
+    text: "\u2026This is a letter to her."
   - ID: Noah
     image: {fileID: 0}
     text: "deadline\uFF1F"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u4ECE\u6765\u90FD\u6CA1\u8DDF\u6211\u8BF4\u8FC7\u3002"
+    text: She never told me about it.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u539F\u6765\u90A3\u6BB5\u65F6\u95F4\u3002"
+    text: "So during that time\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u4E5F\u4E00\u76F4\u5728\u4E00\u4E2A\u4EBA\u786C\u6491\u3002"
+    text: She was enduring everything alone too.

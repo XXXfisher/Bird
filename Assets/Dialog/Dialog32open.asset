@@ -21,7 +21,7 @@ MonoBehaviour:
     text: "maybe I should stay\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "stay \u88AB\u5212\u6389\u4E86\u3002"
+    text: "\u201Cstay\u201D was crossed out\u2026"
   - ID: Noah
     image: {fileID: 0}
     text: "It\u2019s ok\u2026"
@@ -30,4 +30,4 @@ MonoBehaviour:
     text: "Without\u2014\u2014 me."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u5979\u90A3\u65F6\u5019\uFF0C\u5C31\u5728\u60F3\u8FD9\u4E9B\u5417\uFF1F"
+    text: "So that\u2019s what she was thinking back then?"

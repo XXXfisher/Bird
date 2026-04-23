@@ -15,13 +15,13 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4ECA\u5929\u6CA1\u6709\u4FE1\u3002"
+    text: "\u2026No letter today."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u4F60\u6CA1\u6709\u6765\u3002"
+    text: "You didn\u2019t come."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u95E8\u53E3\u4EC0\u4E48\u90FD\u6CA1\u6709\u3002"
+    text: "There\u2019s nothing at the door."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u662F\u51FA\u4E86\u4EC0\u4E48\u610F\u5916\u5417\u3002"
+    text: Did something happen?

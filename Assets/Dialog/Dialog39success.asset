@@ -18,13 +18,13 @@ MonoBehaviour:
     text: I thought you'd be lighter without me.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4F60\u4EE5\u4E3A\uFF0C\u6CA1\u6709\u4F60\u6211\u4F1A\u66F4\u8F7B\u677E\u3002"
+    text: "You thought I\u2019d feel lighter without you."
   - ID: Noah
     image: {fileID: 0}
-    text: "Elena\u2026\u2026\u4E0D\u662F\u8FD9\u6837\u7684\u3002"
+    text: "Elena\u2026 that\u2019s not true."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u53EA\u662F\u60F3\u628A\u4E00\u5207\u90FD\u625B\u4E0B\u6765\u3002"
+    text: I just wanted to carry everything on my own.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u53EF\u6211\u4ECE\u6CA1\u60F3\u8FC7\uFF0C\u4F1A\u5931\u53BB\u4F60\u3002"
+    text: "But I never thought\u2026 I would lose you."

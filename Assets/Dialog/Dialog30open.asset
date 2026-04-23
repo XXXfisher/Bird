@@ -15,13 +15,13 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u5979\u7684\u901F\u5199\u3002"
+    text: "Her sketch\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u8FD9\u662F\u4EC0\u4E48\u65F6\u5019\u753B\u7684\uFF1F"
+    text: When did she draw this?
   - ID: Noah
     image: {fileID: 0}
-    text: "\uFF08\u8F7B\u7B11\uFF09\u5979\u7684\u753B\uFF0C\u8FD8\u662F\u8FD9\u4E48\u597D\u770B\u3002"
+    text: (a faint laugh) Her drawings are still as beautiful as ever.
   - ID: Noah
     image: {fileID: 0}
     text: "so light\u2026"

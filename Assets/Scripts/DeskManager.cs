@@ -11,15 +11,19 @@ public class DeskManager : MonoBehaviour
     public Image backgroundUI;
     public Transform spawnPoint;
     public GameObject BirdAnim;
+    public Button nextButton;
 
-    [Header("所有的桌子预制体库")]
+    public Dialog dialogSystem;
+    public DialogData_SO day1Dialog, day2Dialog, day3Dialog, day4Dialog;
+    
+
+    [Header("桌面的信件预制体")]
     public GameObject D1, D2, D3, D4;
 
     private GameObject currentSpawnedDesk;
 
     void Awake()
     {
-        //BirdAnim.SetActive(false);
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
@@ -53,6 +57,7 @@ public class DeskManager : MonoBehaviour
         GameObject prefabToSpawn = null;
 
         string dataName = data.name;
+
         if (dataName.Contains("Day1")) prefabToSpawn = D1;
         else if (dataName.Contains("Day2")) prefabToSpawn = D2;
         else if (dataName.Contains("Day3")) prefabToSpawn = D3;
@@ -70,15 +75,46 @@ public class DeskManager : MonoBehaviour
     {
         LevelData data = LevelManager.Instance.currentLevelData;
 
+        string dataName = data.name;
+
         yield return new WaitForSeconds(2f);
         if (BirdAnim != null)
         {
             BirdAnim.SetActive(true);
-            yield return new WaitForSeconds(1f); 
+            yield return new WaitForSeconds(1f);
             //BirdAnim.SetActive(false);
         }
-        yield return new WaitForSeconds(2f); 
+        yield return new WaitForSeconds(2f);
         SpawnDeskByData(data);
+
+        yield return new WaitForSeconds(1f);
+
+        DialogData_SO targetDialog = null;
+        if (dataName.Contains("Day1")) targetDialog = day1Dialog;
+        else if (dataName.Contains("Day2")) targetDialog = day2Dialog;
+        else if (dataName.Contains("Day3")) targetDialog = day3Dialog;
+        else if (dataName.Contains("Day4")) targetDialog = day4Dialog;
+
+        if (targetDialog != null && dialogSystem != null)
+        {
+            dialogSystem.dialogPanel.SetActive(true);
+            dialogSystem.UpdateDialogData(targetDialog);
+            dialogSystem.ShowDialog();
+
+            // 只要 dialogPanel 还是激活状态，协程就会在这里“卡住”
+            while (dialogSystem.dialogPanel.activeInHierarchy)
+            {
+                yield return null;
+            }
+
+            // 显示下一步按钮
+            if (nextButton != null)
+            {
+                nextButton.gameObject.SetActive(true);
+            }
+        }
     }
+
+
 
 }

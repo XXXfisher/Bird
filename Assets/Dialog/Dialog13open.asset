@@ -15,25 +15,25 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u8F66\u7968\uFF1F"
+    text: A ticket?
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5355\u7A0B\u3002"
+    text: Advance Single.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u539F\u672C\uFF0C\u662F\u60F3\u8D70\u7684\u3002"
+    text: "She was planning to leave\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u80CC\u540E\u5199\u4E86\u5B57\u3002"
+    text: "There\u2019s writing on the back\u2026"
   - ID: Noah
     image: {fileID: 0}
     text: "\u201CNot\u2026...I just\u2026\u201D"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u5979\u60F3\u8BF4\u4EC0\u4E48\uFF1F"
+    text: What was she trying to say?
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u8BDD\u53EA\u5199\u4E86\u4E00\u534A\u3002"
+    text: "\u2026It\u2019s only half a sentence."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u62FC\u8D77\u6765\uFF0C\u4F1A\u662F\u4E00\u53E5\u5B8C\u6574\u7684\u8BDD\u5417\uFF1F"
+    text: If I piece it together, would it form a complete thought?

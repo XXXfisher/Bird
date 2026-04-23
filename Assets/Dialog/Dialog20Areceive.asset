@@ -15,16 +15,16 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u95E8\u53E3\u8FD8\u6709\u4FE1\u3002"
+    text: "There\u2019s another letter at the door."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u6628\u5929\u4E4B\u540E\uFF0C\u6211\u4EE5\u4E3A\u4E0D\u4F1A\u518D\u6709\u4E86\u3002"
+    text: "I thought there wouldn\u2019t be any more after yesterday."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u53EF\u8FD8\u662F\u6765\u4E86\u3002"
+    text: But it still came.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u597D\u50CF\u6709\u4E9B\u4E8B\u2026\u2026\u8FD8\u6CA1\u7ED3\u675F\u3002"
+    text: "It\u2019s as if something\u2026 still isn\u2019t over."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u6253\u5F00\u770B\u770B\u5427\u3002"
+    text: "\u2026Let\u2019s open it."

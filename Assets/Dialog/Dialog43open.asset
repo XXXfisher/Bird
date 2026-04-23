@@ -15,16 +15,16 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u533B\u7597\u8BB0\u5F55\u3002"
+    text: "\u2026Medical record."
   - ID: Noah
     image: {fileID: 0}
     text: No related individuals present.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u8EAB\u8FB9\uFF0C\u4E00\u4E2A\u4EBA\u90FD\u6CA1\u6709\u3002"
+    text: No one was with her.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u72EC\u81EA\u88AB\u9001\u8FDB\u533B\u9662\u3002"
+    text: She was taken to the hospital alone.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u800C\u6211\u90A3\u65F6\u5019\u2026\u2026\u4EC0\u4E48\u90FD\u4E0D\u77E5\u9053\u3002"
+    text: "And I\u2026 knew nothing at the time."

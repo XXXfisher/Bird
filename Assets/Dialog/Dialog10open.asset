@@ -18,19 +18,19 @@ MonoBehaviour:
     text: "\u2026\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u662F\u5979\u7684\u5B57\u3002"
+    text: "It\u2019s her handwriting."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u8BB0\u5F97\u8FD9\u5F20\u7EB8\u3002"
+    text: I recognize this paper.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u8FD9\u5F20\u7EB8\u2026\u2026\u8FB9\u7F18\u50CF\u662F\u80FD\u526A\u5F00\u3002"
+    text: "This paper\u2026 the edges look like they could be cut."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u90A3\u5929\u665A\u4E0A\u3002"
+    text: "That night\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u7559\u4E0B\u8FD9\u4E2A\uFF0C\u5C31\u51FA\u95E8\u4E86\u3002"
+    text: She left this behind and went out.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u53EA\u5F53\uFF0C\u662F\u5979\u4E00\u65F6\u7684\u6C14\u8BDD\u3002"
+    text: I thought it was just something she said in the heat of the moment.
