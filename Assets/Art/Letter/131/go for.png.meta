@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 62c0aee77fb93e34d8941cd75bb9aaee
+guid: 875a1c0837e41df489c725532b63bc7b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5750353039905602045
-    second: 21_0
-  - first:
-      213: -4687263629476269884
-    second: 21_1
+      213: -719273553884501558
+    second: go for_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,45 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 21_0
+      name: go for_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 369
-        width: 125
-        height: 85
+        x: 961
+        y: 262
+        width: 224
+        height: 187
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 306c65b7064a230b0800000000000000
-      internalID: -5750353039905602045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 21_1
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 370
-        width: 124
-        height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c0757c209e73feb0800000000000000
-      internalID: -4687263629476269884
+      spriteID: ac9a16c7380a406f0800000000000000
+      internalID: -719273553884501558
       vertices: []
       indices: 
       edges: []
@@ -176,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 00548f497588cb14a9adc80b288eaea7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      21_0: -5750353039905602045
-      21_1: -4687263629476269884
+      go for_0: -719273553884501558
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

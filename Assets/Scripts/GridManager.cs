@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 public class GridManager : MonoBehaviour
 {
@@ -60,13 +61,14 @@ public class GridManager : MonoBehaviour
 
         // 顺序检测：根据文档确定行数。
         ArtPiece[] allPieces = FindObjectsByType<ArtPiece>(FindObjectsSortMode.None);
-
         List<ArtPiece> snappedPieces = allPieces
-            .Where(p => areaCollider.OverlapPoint(p.transform.position))
-            .OrderBy(p => p.transform.position.x)
-            .ToList();
+.        Where(p => areaCollider.OverlapPoint(p.transform.position))
+        .OrderByDescending(p => Math.Round(p.transform.position.y, 1))
+        .ThenBy(p => Math.Round(p.transform.position.x, 1))
+        .ToList();
 
         int[] currentSequence = snappedPieces.Select(p => p.pieceID).ToArray();
+        Debug.Log("当前序列: " + string.Join(", ", currentSequence));
 
         if (currentTargetSequence != null && Enumerable.SequenceEqual(currentSequence, currentTargetSequence))
         {
