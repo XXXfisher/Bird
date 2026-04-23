@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class ArtPiece : MonoBehaviour
 {
     [Tooltip("定义每个碎片的编码，最小为1不能是0，每个碎片编码不能相同")]
-    public int pieceID; // 策划可以在 Inspector 中定义每个碎片的编码
+    public int pieceID; 
     private GridManager gridManager;
     private bool isDragging;
     public bool canDrag = false;
@@ -23,6 +24,7 @@ public class ArtPiece : MonoBehaviour
 
         startPos = this.transform.position;
 
+        // 设置渲染顺序，确保碎片按照pieceID的顺序渲染，较大的pieceID在上面
         sr = GetComponent<SpriteRenderer>();
         sr.sortingOrder = pieceID;
 

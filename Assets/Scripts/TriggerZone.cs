@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class TriggerZone : MonoBehaviour
 {
     public LetterController lc;
@@ -7,6 +8,17 @@ public class TriggerZone : MonoBehaviour
 
     private bool isScissorsOver = false;
 
+    void Awake()
+    {
+        lc = GetComponentInParent<LetterController>();
+
+        // 确保BoxCollider2D是触发器
+        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        if (!collider.isTrigger)
+        {
+            collider.isTrigger = true;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Scissors")) isScissorsOver = true;
