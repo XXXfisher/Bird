@@ -29,5 +29,6 @@ MonoBehaviour:
   dialogData: {fileID: 0}
   isDialogNeeded: 0
   backgroundImage: {fileID: 0}
-  targetSequence: 0100000002000000
+  targetSequence: 01000000020000000300000004000000050000000600000007000000
   showHoverPanel: 0
+  showDay6Input: 0

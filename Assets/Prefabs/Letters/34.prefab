@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f509e30aba68a9345bc63930f00b9144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtPiece
-  pieceID: 1
+  pieceID: 3
   canDrag: 1
 --- !u!1 &2136787400061258239
 GameObject:

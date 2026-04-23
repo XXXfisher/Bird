@@ -182,7 +182,7 @@ SpriteRenderer:
   m_Size: {x: 14.82, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3363360934719643861
 GameObject:
@@ -265,7 +265,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5005969746644518489, guid: e0d309e392d976448a2b98303d5f4fb5, type: 3}
+  m_Sprite: {fileID: -1379772580976180279, guid: cdc509bd792d720489524d10dabf4541, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -291,7 +291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2311181448924698858
 Transform:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ SpriteRenderer:
   m_Size: {x: 0.25, y: 1.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6913389159938600748
 GameObject:
@@ -384,7 +384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8799395481751758057
 Transform:
   m_ObjectHideFlags: 0
@@ -457,7 +457,7 @@ SpriteRenderer:
   m_Size: {x: 2.78, y: 1.66}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2023474212075005588
 MonoBehaviour:
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f509e30aba68a9345bc63930f00b9144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtPiece
-  pieceID: 0
+  pieceID: 3
   canDrag: 1
 --- !u!61 &6723823471908972250
 BoxCollider2D:
@@ -537,7 +537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1393020949160517817
 Transform:
   m_ObjectHideFlags: 0
@@ -610,7 +610,7 @@ SpriteRenderer:
   m_Size: {x: 1.65, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &9210244949673446800
 MonoBehaviour:
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f509e30aba68a9345bc63930f00b9144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtPiece
-  pieceID: 0
+  pieceID: 1
   canDrag: 1
 --- !u!61 &6753974511209737702
 BoxCollider2D:
@@ -791,7 +791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5693866085282981253
 Transform:
   m_ObjectHideFlags: 0
@@ -864,7 +864,7 @@ SpriteRenderer:
   m_Size: {x: 2.24, y: 1.87}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8394310018081740027
 MonoBehaviour:
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f509e30aba68a9345bc63930f00b9144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtPiece
-  pieceID: 0
+  pieceID: 6
   canDrag: 1
 --- !u!61 &6222122463343254936
 BoxCollider2D:

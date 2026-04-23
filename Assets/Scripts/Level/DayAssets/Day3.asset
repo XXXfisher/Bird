@@ -13,10 +13,19 @@ MonoBehaviour:
   m_Name: Day3
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   letterButtons:
-  - letterName: 20
-    buttonSprite: {fileID: 4164744761163438241, guid: 7de4093f2ebbe3d4aa7b15fc99476f4b, type: 3}
-    prefabToSpawn: {fileID: 1707343135962474610, guid: 72d46001d516be342a3f4027c5772bf0, type: 3}
+  - letterName: 30
+    buttonSprite: {fileID: 1192843865154028290, guid: 6b92a760586c02e419c793427c504d1f, type: 3}
+    prefabToSpawn: {fileID: 9221647967288847580, guid: fb455b0c10800b44786aa3bdba3a698a, type: 3}
+  - letterName: 31
+    buttonSprite: {fileID: -30749221642623036, guid: c945a5897e9f2a345a5acd80aec6f9c0, type: 3}
+    prefabToSpawn: {fileID: 4133178904471287488, guid: d1104c43e0acf8346ba04497fd8dd09e, type: 3}
+  - letterName: 34
+    buttonSprite: {fileID: 3620510468529025383, guid: 239f285dfa3b09747994544cd59b0df5, type: 3}
+    prefabToSpawn: {fileID: 2837947824672825750, guid: 0fc59dc4492ff2b4f8e8c4bf964f56ce, type: 3}
   levelType: 0
   dialogData: {fileID: 0}
   isDialogNeeded: 0
   backgroundImage: {fileID: 0}
+  targetSequence: 010000000200000003000000
+  showHoverPanel: 0
+  showDay6Input: 0

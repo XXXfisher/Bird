@@ -13,10 +13,22 @@ MonoBehaviour:
   m_Name: Day4
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   letterButtons:
-  - letterName: 20
-    buttonSprite: {fileID: 4164744761163438241, guid: 7de4093f2ebbe3d4aa7b15fc99476f4b, type: 3}
-    prefabToSpawn: {fileID: 1707343135962474610, guid: 72d46001d516be342a3f4027c5772bf0, type: 3}
+  - letterName: 40
+    buttonSprite: {fileID: 1192843865154028290, guid: 6b92a760586c02e419c793427c504d1f, type: 3}
+    prefabToSpawn: {fileID: 8637436691644305572, guid: b8251e1ab38b5e04c842214691050b2f, type: 3}
+  - letterName: 41
+    buttonSprite: {fileID: -8419024768148562069, guid: b85e6270d82331c4e8d01273bf902125, type: 3}
+    prefabToSpawn: {fileID: 8020388749387993303, guid: 2e07aa725a5c09d428cf20d5e1efcb89, type: 3}
+  - letterName: 42
+    buttonSprite: {fileID: 7059393366267629080, guid: 8d275f5eaa7d45d4bb36baa872371a11, type: 3}
+    prefabToSpawn: {fileID: 4961780694967509141, guid: 6734add01a271c743842862b29f36bca, type: 3}
+  - letterName: 43
+    buttonSprite: {fileID: -4004772778501413904, guid: 360024ab6dde9f94bbce182fbdba44e0, type: 3}
+    prefabToSpawn: {fileID: 1401918323345907994, guid: cacf9a0805d489941bbc9fef04d6f231, type: 3}
   levelType: 0
   dialogData: {fileID: 0}
   isDialogNeeded: 0
   backgroundImage: {fileID: 0}
+  targetSequence: 01000000020000000300000004000000
+  showHoverPanel: 0
+  showDay6Input: 0

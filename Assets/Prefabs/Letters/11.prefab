@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f509e30aba68a9345bc63930f00b9144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtPiece
-  pieceID: 0
+  pieceID: 5
   canDrag: 1
 --- !u!61 &8187117824847725778
 BoxCollider2D:
