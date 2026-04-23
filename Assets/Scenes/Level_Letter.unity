@@ -2798,6 +2798,8 @@ MonoBehaviour:
   inputField: {fileID: 1050747711}
   confirmButton: {fileID: 432017878}
   waitTime: 3
+  endingPrefab: {fileID: 7566929042146495884, guid: 1d94d6faa9bd19749aa8eb2726b4f103, type: 3}
+  endingParent: {fileID: 1476830665}
 --- !u!1 &1571603978
 GameObject:
   m_ObjectHideFlags: 0
