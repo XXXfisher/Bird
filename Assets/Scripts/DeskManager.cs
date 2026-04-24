@@ -106,10 +106,10 @@ public class DeskManager : MonoBehaviour
             dialogSystem.ShowDialog();
 
             // 只要 dialogPanel 还是激活状态，协程就会在这里“卡住”
-            while (dialogSystem.dialogPanel.activeInHierarchy)
-            {
-                yield return null;
-            }
+            //while (dialogSystem.dialogPanel.activeInHierarchy)
+            //{
+            //    yield return null;
+            //}
 
             // 显示下一步按钮
             if (nextButton != null)
