@@ -11,8 +11,16 @@ public class MyLetterUI : MonoBehaviour
 
     public AudioClip clickSound; // 点击按钮时的音效
 
+    [Header("点击限制")]
+    public int maxClickCount = 1; // 最多允许点击几次
+    private int currentClickCount = 0;
+
+    private Button button;
+
     public void Init(LetterButtonInfo info, LevelData data, LetterManager manager)
     {
+        button = GetComponent<Button>();
+
         // 1. 设置按钮的视觉效果（图片）
         if (info.buttonSprite != null)
         {
@@ -33,6 +41,12 @@ public class MyLetterUI : MonoBehaviour
 
     public void OnClick()
     {
+        if (currentClickCount >= maxClickCount)
+        {
+            return;
+        }
+        currentClickCount++;
+
         if (clickSound != null && AudioManager.Instance != null)
         {
             AudioManager.Instance.audioSource.PlayOneShot(clickSound);
@@ -51,6 +65,11 @@ public class MyLetterUI : MonoBehaviour
                 Debug.LogWarning($"[MyLetterUI] Dialog component not assigned for {myInfo.letterName}");
             }
         }
- 
+
+        if (currentClickCount >= maxClickCount && button != null)
+        {
+            button.interactable = false;
+        }
+
     }
 }

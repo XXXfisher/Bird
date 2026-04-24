@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class HoverScale : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("Scale Settings")]
-    public float hoverScale = 1.05f;
+    public float hoverScale = 1.1f;
     public float speed = 8f;
 
     private Vector3 originalScale;

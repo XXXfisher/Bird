@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Collections;
 
 public class HoverItemUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -11,9 +12,11 @@ public class HoverItemUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public Vector2 yOffset = new Vector2(0, 50);
 
     public int itemID;
-
+    [Header("淡出设置")]
+    public float fadeDuration = 2f;
 
     private RectTransform rectTransform;
+    private Coroutine fadeCoroutine;
 
     void Awake()
     {
@@ -39,15 +42,56 @@ public class HoverItemUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         if (textUI == null || target == null) return;
 
+        // 停止正在进行的淡出
+        if (fadeCoroutine != null)
+        {
+            StopCoroutine(fadeCoroutine);
+        }
+
         textUI.text = msg;
         textUI.gameObject.SetActive(true);
 
-        // Text 和 Image 在同一个父级（或同等级 Canvas）下
+        // 重置透明度
+        Color c = textUI.color;
+        c.a = 1f;
+        textUI.color = c;
+
         textUI.rectTransform.anchoredPosition = target.anchoredPosition + yOffset;
     }
 
     public void Hide()
     {
-        if (textUI != null) textUI.gameObject.SetActive(false);
+        if (textUI == null) return;
+
+        if (fadeCoroutine != null)
+        {
+            StopCoroutine(fadeCoroutine);
+        }
+
+        fadeCoroutine = StartCoroutine(FadeOut());
+    }
+
+    IEnumerator FadeOut()
+    {
+        yield return new WaitForSeconds(2f);
+
+        float timer = 0f;
+
+        Color startColor = textUI.color;
+
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+
+            float alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration);
+
+            Color c = startColor;
+            c.a = alpha;
+            textUI.color = c;
+
+            yield return null;
+        }
+
+        textUI.gameObject.SetActive(false);
     }
 }
