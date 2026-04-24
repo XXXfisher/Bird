@@ -10,12 +10,15 @@ public class DeskManager : MonoBehaviour
     [Header("配置与引用")]
     public Image backgroundUI;
     public Transform spawnPoint;
-    public GameObject BirdAnim;
-    public Button nextButton;
 
+    [Header("鸟动画")]
+    public GameObject BirdAnim;
+    public AudioClip birdClip;
+
+    [Header("按钮与对话系统")]
+    public Button nextButton;
     public Dialog dialogSystem;
     public DialogData_SO day1Dialog, day2Dialog, day3Dialog, day4Dialog;
-    
 
     [Header("桌面的信件预制体")]
     public GameObject D1, D2, D3, D4;
@@ -81,6 +84,7 @@ public class DeskManager : MonoBehaviour
         if (BirdAnim != null)
         {
             BirdAnim.SetActive(true);
+            AudioManager.Instance.audioSource.PlayOneShot(birdClip);
             yield return new WaitForSeconds(1f);
             //BirdAnim.SetActive(false);
         }

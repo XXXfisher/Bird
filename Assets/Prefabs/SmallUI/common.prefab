@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MyLetterUI
   dialog: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 85b9e90ce0b941f46b138773c2fcd79e, type: 3}
 --- !u!1 &8251517189836432577
 GameObject:
   m_ObjectHideFlags: 0

@@ -760,6 +760,7 @@ MonoBehaviour:
   backgroundUI: {fileID: 814361302}
   spawnPoint: {fileID: 1296468464}
   BirdAnim: {fileID: 154601189}
+  birdClip: {fileID: 8300000, guid: 4c6ea5f90b35b8442b405e2accb0afe1, type: 3}
   nextButton: {fileID: 298482492}
   dialogSystem: {fileID: 437180097}
   day1Dialog: {fileID: 11400000, guid: d08059fe60bcf16419624af88610604a, type: 2}

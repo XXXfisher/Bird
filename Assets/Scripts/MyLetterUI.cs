@@ -9,8 +9,7 @@ public class MyLetterUI : MonoBehaviour
     public Dialog dialog; // 需要在Inspector里关联这个组件
     private LetterButtonInfo myInfo;
 
-
-
+    public AudioClip clickSound; // 点击按钮时的音效
 
     public void Init(LetterButtonInfo info, LevelData data, LetterManager manager)
     {
@@ -34,6 +33,11 @@ public class MyLetterUI : MonoBehaviour
 
     public void OnClick()
     {
+        if (clickSound != null && AudioManager.Instance != null)
+        {
+            AudioManager.Instance.audioSource.PlayOneShot(clickSound);
+        }
+
         letterManager.SpawnLetter(myLetterPrefab);
 
         if (myInfo != null && myInfo.openingDialog != null)
