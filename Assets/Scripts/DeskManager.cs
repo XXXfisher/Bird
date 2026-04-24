@@ -18,10 +18,10 @@ public class DeskManager : MonoBehaviour
     [Header("按钮与对话系统")]
     public Button nextButton;
     public Dialog dialogSystem;
-    public DialogData_SO day1Dialog, day2Dialog, day3Dialog, day4Dialog;
+    public DialogData_SO day1Dialog, day2Dialog, day3Dialog, day4Dialog, day5Dialog, day6Dialog;
 
     [Header("桌面的信件预制体")]
-    public GameObject D1, D2, D3, D4;
+    public GameObject D1, D2, D3, D4, D5, D6;
 
     private GameObject currentSpawnedDesk;
 
@@ -65,7 +65,8 @@ public class DeskManager : MonoBehaviour
         else if (dataName.Contains("Day2")) prefabToSpawn = D2;
         else if (dataName.Contains("Day3")) prefabToSpawn = D3;
         else if (dataName.Contains("Day4")) prefabToSpawn = D4;
-
+        else if (dataName.Contains("Day5")) prefabToSpawn = D5;
+        else if (dataName.Contains("Day6")) prefabToSpawn = D6;
 
         if (prefabToSpawn != null)
         {
@@ -98,6 +99,8 @@ public class DeskManager : MonoBehaviour
         else if (dataName.Contains("Day2")) targetDialog = day2Dialog;
         else if (dataName.Contains("Day3")) targetDialog = day3Dialog;
         else if (dataName.Contains("Day4")) targetDialog = day4Dialog;
+        else if (dataName.Contains("Day5")) targetDialog = day5Dialog;
+        else if (dataName.Contains("Day6")) targetDialog = day6Dialog;
 
         if (targetDialog != null && dialogSystem != null)
         {
@@ -105,11 +108,11 @@ public class DeskManager : MonoBehaviour
             dialogSystem.UpdateDialogData(targetDialog);
             dialogSystem.ShowDialog();
 
-            // 只要 dialogPanel 还是激活状态，协程就会在这里“卡住”
-            //while (dialogSystem.dialogPanel.activeInHierarchy)
-            //{
-            //    yield return null;
-            //}
+            //只要 dialogPanel 还是激活状态，协程就会在这里“卡住”
+            while (dialogSystem.dialogPanel.activeInHierarchy)
+            {
+                yield return null;
+            }
 
             // 显示下一步按钮
             if (nextButton != null)
