@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -4178046375966092550, guid: af199fb0ea3a691498b0c8982fcab74b, type: 3}
     text: "\u2026You\u2019re here."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -4178046375966092550, guid: af199fb0ea3a691498b0c8982fcab74b, type: 3}
     text: "This is\u2026 our favorite film."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: Are you leaving?

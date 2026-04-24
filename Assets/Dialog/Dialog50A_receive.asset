@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 5503601100735391139, guid: b76abf6cea25fbc4c811a4099ea1b24a, type: 3}
     text: "\u2026No letter today."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -6470460504253458178, guid: 6a6bd0dba60404a4abe76b8e2ee510e4, type: 3}
     text: "You didn\u2019t come."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 5503601100735391139, guid: b76abf6cea25fbc4c811a4099ea1b24a, type: 3}
     text: "There\u2019s nothing at the door."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: Did something happen?

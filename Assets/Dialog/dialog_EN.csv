@@ -1,0 +1,167 @@
+﻿DialogName,LineIndex,ID,Text,ImagePath
+Dialog10A_receive,0,Noah,There’s another letter at the door.,Noah_Neutral
+Dialog10A_receive,1,Noah,…It’s been like this a lot lately.,Noah_Neutral
+Dialog10A_receive,2,Noah,"I don’t know who’s sending them,",Noah_Neutral
+Dialog10A_receive,3,Noah,But they always end up here.,Noah_Neutral
+Dialog10A_receive,4,Noah,…Let’s open it and see.,Noah_Neutral
+,,,,
+Dialog10open,0,Noah,……,Noah_Recognition
+Dialog10open,1,Noah,It’s her handwriting.,Noah_Recognition
+Dialog10open,2,Noah,I recognize this paper.,Noah_Sad
+Dialog10open,3,Noah,This paper… the edges look like they could be cut.,Noah_Neutral
+Dialog10open,4,Noah,That night…,Noah_Sad
+Dialog10open,5,Noah,She left this behind and went out.,Noah_Sad
+Dialog10open,6,Noah,I thought it was just something she said in the heat of the moment.,Noah_Regret
+,,,,
+Dialog11open,0,Noah,…The management office?,Noah_Recognition
+Dialog11open,1,Noah,So other people heard it too.,Noah_Sad
+Dialog11open,2,Noah,During that time…,Noah_Sad
+Dialog11open,3,Noah,We were always arguing.,Noah_Regret
+,,,,
+Dialog12open,0,Noah,…No.,Noah_Crying
+Dialog12open,1,Noah,Not this.,Noah_Crying
+Dialog12open,2,Noah,I still don’t dare open it.,Noah_Sad
+Dialog12open,3,Noah,That night… I didn’t even see her one last time.,Noah_Regret
+Dialog12open,4,Noah,"She must still be blaming me, right?",Noah_Crying
+,,,,
+Dialog13open,0,Noah,A ticket?,Noah_Recognition
+Dialog13open,1,Noah,Advance Single.,Noah_Recognition
+Dialog13open,2,Noah,She was planning to leave…,Noah_Sad
+Dialog13open,3,Noah,There’s writing on the back…,Noah_Recognition
+Dialog13open,4,Noah,“Not…...I just…”,Noah_Recognition
+Dialog13open,5,Noah,What was she trying to say?,Noah_Recognition
+Dialog13open,6,Noah,…It’s only half a sentence.,Noah_Recognition
+Dialog13open,7,Noah,"If I piece it together, would it form a complete thought?",Noah_Recognition
+,,,,
+Dialog19success,0,Noah,It’s not hatred.,Noah_Crying
+Dialog19success,1,Noah,But she… is never coming back.,Noah_Crying
+,,,,
+Dialog20Areceive,0,Noah,There’s another letter at the door.,Noah_Neutral
+Dialog20Areceive,1,Noah,I thought there wouldn’t be any more after yesterday.,Noah_Neutral
+Dialog20Areceive,2,Noah,But it still came.,Noah_Neutral
+Dialog20Areceive,3,Noah,It’s as if something… still isn’t over.,Noah_Sad
+Dialog20Areceive,4,Noah,…Let’s open it.,Noah_Neutral
+,,,,
+Dialog20open,0,Noah,…A company letter.,Noah_Recognition
+Dialog20open,1,Noah,Promotion notice.,Noah_Recognition
+Dialog20open,2,Noah,During that time…,Noah_Sad
+Dialog20open,3,Noah,I was at work almost every day.,Noah_Sad
+Dialog20open,4,Noah,I thought that if I just worked a little harder…,Noah_Regret
+Dialog20open,5,Noah,Everything would get better.,Noah_Regret
+,,,,
+Dialog21open,0,Noah,…A payslip.,Noah_Recognition
+Dialog21open,1,Noah,46 hours of overtime.,Noah_Recognition
+Dialog21open,2,Noah,I didn’t realize it had become this much.,Noah_Sad
+Dialog21open,3,Noah,Those nights… I can barely remember them.,Noah_Regret
+Dialog21open,4,Noah,I just remember being exhausted all the time.,Noah_Sad
+,,,,
+Dialog22open,0,Noah,Coffee again.,Noah_Recognition
+Dialog22open,1,Noah,3 am… ,Noah_Sad
+Dialog22open,2,Noah,Two cups.,Noah_Recognition
+Dialog22open,3,Noah,She used to stay with me back then.,Noah_Sad
+Dialog22open,4,Noah,And I never really paid attention.,Noah_Regret
+,,,,
+Dialog23open,0,Noah,For me？,Noah_Recognition
+Dialog23open,1,Noah,… She wrote it over and over again.,Noah_Recognition
+Dialog23open,2,Noah,Was she thinking about this the whole time?,Noah_Sad
+,,,,
+Dialog29success,0,Noah,You've done too much for me.,Noah_Recognition
+Dialog29success,1,Noah,But Elena… this was always what I was supposed to do.,Noah_Sad
+Dialog29success,2,Noah,I never saw it as a burden.,Noah_Regret
+Dialog29success,3,Noah,I just wanted to make things easier for you.,Noah_Sad
+,,,,
+Dialog30A_receive,0,Noah,… It’s you again.,Noah_Soft
+Dialog30A_receive,1,Noah,You were the one who delivered the letter today as well.,Noah_Soft
+Dialog30A_receive,2,Noah,I think… I’m starting to get used to your voice.,Noah_Soft
+Dialog30A_receive,4,Noah,…What are you trying to make me understand today?,Noah_Soft
+,,,,
+Dialog30open,0,Noah,Her sketch…,Noah_Recognition
+Dialog30open,1,Noah,When did she draw this?,Noah_Recognition
+Dialog30open,2,Noah,(a faint laugh) Her drawings are still as beautiful as ever.,Noah_Soft
+Dialog30open,3,Noah,so light…,Noah_Recognition
+Dialog30open,4,Noah,……lighter？,Noah_Sad
+,,,,
+Dialog31open,0,Noah,…This is a letter to her.,Noah_Recognition
+Dialog31open,1,Noah,deadline？,Noah_Recognition
+Dialog31open,2,Noah,She never told me about it.,Noah_Sad
+Dialog31open,3,Noah,So during that time…,Noah_Sad
+Dialog31open,4,Noah,She was enduring everything alone too.,Noah_Regret
+,,,,
+Dialog32open,0,Noah,you look tired…,Noah_Recognition
+Dialog32open,1,Noah,maybe I should stay…,Noah_Sad
+Dialog32open,2,Noah,“stay” was crossed out…,Noah_Recognition
+Dialog32open,3,Noah,It’s ok…,Noah_Sad
+Dialog32open,4,Noah,Without—— me.,Noah_Recognition
+Dialog32open,5,Noah,So that’s what she was thinking back then?,Noah_Crying
+,,,,
+Dialog39success,0,Noah,I thought you'd be lighter without me.,Noah_Recognition
+Dialog39success,1,Noah,You thought I’d feel lighter without you.,Noah_Sad
+Dialog39success,2,Noah,Elena… that’s not true.,Noah_Crying
+Dialog39success,3,Noah,I just wanted to carry everything on my own.,Noah_Regret
+Dialog39success,4,Noah,But I never thought… I would lose you.,Noah_Crying
+,,,,
+Dialog40A_receive,0,Noah,…You’re here again.,Noah_Soft
+Dialog40A_receive,1,Noah,There’s another letter today too.,Noah_Soft
+Dialog40A_receive,2,Noah,I’ve started waiting for you to appear.,Noah_Sad
+Dialog40A_receive,3,Noah,"It feels like… as long as you come,",Noah_Soft
+Dialog40A_receive,4,Noah,I can remember a little more of her.,Noah_Recognition
+,,,,
+Dialog40open,0,Noah,…Her diary page.,Noah_Recognition
+Dialog40open,1,Noah,She tried to make muffins?,Noah_Recognition
+Dialog40open,2,Noah,(a soft laugh) She always said she’d learn it someday.,Noah_Soft
+Dialog40open,3,Noah,Because I was always working late.,Noah_Sad
+Dialog40open,4,Noah,She wanted to help me… take a little of the load off.,Noah_Regret
+Dialog40open,5,Noah,because of you…,Noah_Recognition
+Dialog40open,6,Noah,What was she thinking…,Noah_Sad
+Dialog40open,7,Noah,when she wrote this?,Noah_Regret
+,,,,
+Dialog41open,0,Noah,A newspaper.,Noah_Recognition
+Dialog41open,1,Noah,The accident that night.,Noah_Sad
+Dialog41open,2,Noah,A turn… no notice of a pedestrian.,Noah_Recognition
+Dialog41open,3,Noah,Just… an accident.,Noah_Sad
+Dialog41open,4,Noah,But I can never convince myself of that.,Noah_Regret
+,,,,
+Dialog42open,0,Noah,Police report.,Noah_Recognition
+Dialog42open,1,Noah,Conclusion…,Noah_Recognition
+Dialog42open,2,Noah,The incident was just that—an unfortunate accident.,Noah_Recognition
+Dialog42open,3,Noah,No other cause,Noah_Sad
+Dialog42open,4,Noah,No one to blame.,Noah_Regret
+,,,,
+Dialog43open,0,Noah,…Medical record.,Noah_Recognition
+Dialog43open,1,Noah,No related individuals present.,Noah_Recognition
+Dialog43open,2,Noah,No one was with her.,Noah_Sad
+Dialog43open,3,Noah,She was taken to the hospital alone.,Noah_Crying
+Dialog43open,4,Noah,And I… knew nothing at the time.,Noah_Regret
+,,,,
+Dialog49success,0,Noah,The accident was just that.,Noah_Recognition
+Dialog49success,1,Noah,This wasn't because of you.,Noah_Recognition
+Dialog49success,2,Noah,It wasn’t because of me.,Noah_Sad
+Dialog49success,3,Noah,She didn’t leave because of me.,Noah_Crying
+Dialog49success,4,Noah,But why do I still feel…,Noah_Regret
+Dialog49success,5,Noah,like I failed to hold onto her?,Noah_Crying
+,,,,
+Dialog50A_receive,0,Noah,…No letter today.,Noah_Neutral
+Dialog50A_receive,1,Noah,You didn’t come.,Noah_Sad
+Dialog50A_receive,2,Noah,There’s nothing at the door.,Noah_Neutral
+Dialog50A_receive,3,Noah,Did something happen?,Noah_Recognition
+,,,,
+Dialog59success,0,Noah,Still here…,Noah_Recognition
+Dialog59success,1,Noah,with you.,Noah_Recognition
+Dialog59success,2,Noah,…You came.,Noah_Soft
+Dialog59success,3,Noah,The one who’s been bringing all these letters…,Noah_Sad
+Dialog59success,4,Noah,"it was you, wasn’t it?",Noah_Recognition
+Dialog59success,5,Noah,That white bird…,Noah_Sad
+Dialog59success,6,Noah,"was that you, Elena?",Noah_Crying
+Dialog59success,7,Noah,"…Please, tell me.",Noah_Soft
+,,,,
+Dialog60A_receive,0,Noah,…You’re here.,Noah_Soft
+Dialog60A_receive,1,Noah,This is… our favorite film.,Noah_Soft
+Dialog60A_receive,2,Noah,Are you leaving?,Noah_Crying
+,,,,
+Dialog60open,0,Noah,You saw me.,Noah_Recognition
+Dialog60open,1,Noah,I loved you.,Noah_Crying
+,,,,
+Dialog69success,2,Noah,…I know.,Noah_Sad
+Dialog69success,3,Noah,I already know.,Noah_Soft
+Dialog69success,3,Noah,Now it’s my turn to tell you.,Noah_Soft
+Dialog69success,4,Noah,"Elena, _________",Noah_Crying

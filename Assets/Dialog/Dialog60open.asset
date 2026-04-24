@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: You saw me.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: I loved you.

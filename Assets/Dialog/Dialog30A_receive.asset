@@ -14,17 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -4178046375966092550, guid: af199fb0ea3a691498b0c8982fcab74b, type: 3}
     text: "\u2026 It\u2019s you again."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -4178046375966092550, guid: af199fb0ea3a691498b0c8982fcab74b, type: 3}
     text: You were the one who delivered the letter today as well.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -4178046375966092550, guid: af199fb0ea3a691498b0c8982fcab74b, type: 3}
     text: "I think\u2026 I\u2019m starting to get used to your voice."
   - ID: Noah
-    image: {fileID: 0}
-    text: 
-  - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -4178046375966092550, guid: af199fb0ea3a691498b0c8982fcab74b, type: 3}
     text: "\u2026What are you trying to make me understand today?"

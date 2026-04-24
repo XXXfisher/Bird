@@ -4870,6 +4870,7 @@ MonoBehaviour:
   dialogPanel: {fileID: 1938414649}
   nextButton: {fileID: 323475999}
   mainText: {fileID: 215267661}
+  portraitImage: {fileID: 1258501983}
   currentData: {fileID: 0}
 --- !u!1 &1946528284
 GameObject:
