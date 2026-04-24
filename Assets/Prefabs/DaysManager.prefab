@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.892073, g: 0.9748427, b: 0.9641567, a: 0.7529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: with
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: you
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -658,7 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5503601100735391139, guid: 982568848d65b5f4297063078c9e92ed, type: 3}
+  m_Sprite: {fileID: 5503601100735391139, guid: b76abf6cea25fbc4c811a4099ea1b24a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: B
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: B
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -1723,7 +1723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -2011,7 +2011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: here
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -2156,7 +2156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -2338,7 +2338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -2431,7 +2431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: ADFGH
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -2720,7 +2720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: B
+  content: still
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}
@@ -2813,7 +2813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209aa0a1d74c81c46aad6aa93ca02b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverItemUI
-  content: B
+  content: ......
   textUI: {fileID: 8297717928304383567}
   manager: {fileID: 3798322040986768531}
   yOffset: {x: 0, y: 50}

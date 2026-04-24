@@ -89,7 +89,11 @@ public class DeskManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             //BirdAnim.SetActive(false);
         }
-        yield return new WaitForSeconds(2f);
+        if (currentSpawnedDesk != null)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+
         SpawnDeskByData(data);
 
         yield return new WaitForSeconds(1f);
