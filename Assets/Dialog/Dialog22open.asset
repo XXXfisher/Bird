@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: Coffee again.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -6470460504253458178, guid: 6a6bd0dba60404a4abe76b8e2ee510e4, type: 3}
     text: "3 am\u2026 "
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 5503601100735391139, guid: b76abf6cea25fbc4c811a4099ea1b24a, type: 3}
     text: Two cups.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -6470460504253458178, guid: 6a6bd0dba60404a4abe76b8e2ee510e4, type: 3}
     text: She used to stay with me back then.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 6937817954938267909, guid: 75e8005250a27c04386bf060f8e731fc, type: 3}
     text: And I never really paid attention.

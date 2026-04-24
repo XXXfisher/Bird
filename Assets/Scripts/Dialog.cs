@@ -17,6 +17,9 @@ public class Dialog : MonoBehaviour
     public Button nextButton;
     public TMPro.TextMeshProUGUI mainText;
 
+    [Header("头像 UI")]
+    public Image portraitImage; // 对话头像
+
     [Header("Data")]
     public DialogData_SO currentData;
     int currentLineIndex = 0;
@@ -71,6 +74,21 @@ public class Dialog : MonoBehaviour
         }
 
         mainText.text = piece != null ? piece.text : "";
+
+        // 更新头像
+        if (portraitImage != null)
+        {
+            if (piece != null && piece.image != null)
+            {
+                portraitImage.sprite = piece.image;
+                portraitImage.gameObject.SetActive(true);
+            }
+            else
+            {
+                portraitImage.gameObject.SetActive(false);
+            }
+        }
+
 
         // 如果还有下一句就显示 next，否则隐藏
         //bool hasNext = currentData != null &&

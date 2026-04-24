@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 5503601100735391139, guid: b76abf6cea25fbc4c811a4099ea1b24a, type: 3}
     text: "There\u2019s another letter at the door."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 5503601100735391139, guid: b76abf6cea25fbc4c811a4099ea1b24a, type: 3}
     text: "\u2026It\u2019s been like this a lot lately."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: "I don\u2019t know who\u2019s sending them,"
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: But they always end up here.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: "\u2026Let\u2019s open it and see."

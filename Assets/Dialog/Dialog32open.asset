@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: "you look tired\u2026"
   - ID: Noah
     image: {fileID: 0}
     text: "maybe I should stay\u2026"
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: "\u201Cstay\u201D was crossed out\u2026"
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -6470460504253458178, guid: 6a6bd0dba60404a4abe76b8e2ee510e4, type: 3}
     text: "It\u2019s ok\u2026"
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: "Without\u2014\u2014 me."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: "So that\u2019s what she was thinking back then?"

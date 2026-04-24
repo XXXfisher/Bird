@@ -14,26 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: "\u2026Her diary page."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: She tried to make muffins?
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -4178046375966092550, guid: af199fb0ea3a691498b0c8982fcab74b, type: 3}
     text: "(a soft laugh) She always said she\u2019d learn it someday."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -6470460504253458178, guid: 6a6bd0dba60404a4abe76b8e2ee510e4, type: 3}
     text: Because I was always working late.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 6937817954938267909, guid: 75e8005250a27c04386bf060f8e731fc, type: 3}
     text: "She wanted to help me\u2026 take a little of the load off."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -855298285791758126, guid: 81d59856c6b68d14a8d3279fb1231e5e, type: 3}
     text: "because of you\u2026"
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -6470460504253458178, guid: 6a6bd0dba60404a4abe76b8e2ee510e4, type: 3}
     text: "What was she thinking\u2026"
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 6937817954938267909, guid: 75e8005250a27c04386bf060f8e731fc, type: 3}
     text: when she wrote this?

@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogData_SO
   dialogPieces:
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: "\u2026No."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: Not this.
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: -6470460504253458178, guid: 6a6bd0dba60404a4abe76b8e2ee510e4, type: 3}
     text: "I still don\u2019t dare open it."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 6937817954938267909, guid: 75e8005250a27c04386bf060f8e731fc, type: 3}
     text: "That night\u2026 I didn\u2019t even see her one last time."
   - ID: Noah
-    image: {fileID: 0}
+    image: {fileID: 4130640169021434097, guid: 692a39cfa42d55d44b4c51e3c4d67d79, type: 3}
     text: She must still be blaming me, right?
