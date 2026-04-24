@@ -16,16 +16,19 @@ MonoBehaviour:
   - letterName: 30
     buttonSprite: {fileID: 1192843865154028290, guid: 6b92a760586c02e419c793427c504d1f, type: 3}
     prefabToSpawn: {fileID: 9221647967288847580, guid: fb455b0c10800b44786aa3bdba3a698a, type: 3}
+    openingDialog: {fileID: 11400000, guid: b9118207ab484b941bd48b4311981dc9, type: 2}
   - letterName: 31
     buttonSprite: {fileID: -30749221642623036, guid: c945a5897e9f2a345a5acd80aec6f9c0, type: 3}
     prefabToSpawn: {fileID: 4133178904471287488, guid: d1104c43e0acf8346ba04497fd8dd09e, type: 3}
+    openingDialog: {fileID: 11400000, guid: ce41cdbca4062ed4ca8bbcab94c2bfa3, type: 2}
   - letterName: 34
     buttonSprite: {fileID: 3620510468529025383, guid: 239f285dfa3b09747994544cd59b0df5, type: 3}
     prefabToSpawn: {fileID: 2837947824672825750, guid: 0fc59dc4492ff2b4f8e8c4bf964f56ce, type: 3}
+    openingDialog: {fileID: 11400000, guid: 327cd35e8ef0f1c4d9603dac0fe7a7af, type: 2}
   levelType: 0
-  dialogData: {fileID: 0}
-  isDialogNeeded: 0
-  backgroundImage: {fileID: 0}
+  endlevelDialogData: {fileID: 11400000, guid: 41d387ccd5de0664da0387ec81c402f1, type: 2}
+  isDialogNeeded: 1
+  backgroundImage: {fileID: -7617236060501834510, guid: 60c283fc05fc8f148adafa475e57d325, type: 3}
   targetSequence: 010000000200000003000000
   showHoverPanel: 0
   showDay6Input: 0

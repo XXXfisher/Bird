@@ -15,16 +15,16 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u5DE5\u8D44\u5355\u3002"
+    text: "\u2026A payslip."
   - ID: Noah
     image: {fileID: 0}
-    text: "46\u5C0F\u65F6\u52A0\u73ED\u3002"
+    text: 46 hours of overtime.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u539F\u6765\u5DF2\u7ECF\u8FD9\u4E48\u591A\u4E86\u3002"
+    text: "I didn\u2019t realize it had become this much."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u90A3\u4E9B\u591C\u665A\uFF0C\u6211\u51E0\u4E4E\u90FD\u8BB0\u4E0D\u6E05\u4E86\u3002"
+    text: "Those nights\u2026 I can barely remember them."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u53EA\u8BB0\u5F97\uFF0C\u4E00\u76F4\u5F88\u7D2F\u3002"
+    text: I just remember being exhausted all the time.

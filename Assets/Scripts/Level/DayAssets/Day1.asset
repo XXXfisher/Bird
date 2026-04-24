@@ -16,19 +16,23 @@ MonoBehaviour:
   - letterName: 10
     buttonSprite: {fileID: -5099292496197868168, guid: a606e8bd1ff018e4e951784c711c4821, type: 3}
     prefabToSpawn: {fileID: 8697958460871459418, guid: 46d0ca600f7afbb46a8f62d54daeb0c8, type: 3}
+    openingDialog: {fileID: 11400000, guid: 5d45f1189fa9616419a15b3271a58fbb, type: 2}
   - letterName: 11
     buttonSprite: {fileID: -2966200626249415253, guid: 5e41c4c189e86ef41a6d97cb04965350, type: 3}
     prefabToSpawn: {fileID: 247574332267546310, guid: b8a3c9641f73b724590cf62499af3f9a, type: 3}
+    openingDialog: {fileID: 11400000, guid: 135b34bd77f0bdd4ba538b66066eee7c, type: 2}
   - letterName: 12
     buttonSprite: {fileID: -1540426309290004842, guid: c219f76bc0c174e4289fb5d62be58329, type: 3}
     prefabToSpawn: {fileID: 8579459708632371597, guid: d3fdd5a8a8eb0684e9c7877b445ed23b, type: 3}
+    openingDialog: {fileID: 11400000, guid: f8eff43b56ea07a4fbe7508fecc8d29b, type: 2}
   - letterName: 13
     buttonSprite: {fileID: 8389134475083476877, guid: a4d4fd56d588f9c48b9d375247a87236, type: 3}
     prefabToSpawn: {fileID: 7859226081763118647, guid: 7ceab8f5fea48b443a17395bb28a1c50, type: 3}
+    openingDialog: {fileID: 11400000, guid: fa0182272cfdebd47a40db6b88eec80e, type: 2}
   levelType: 0
-  dialogData: {fileID: 0}
-  isDialogNeeded: 0
-  backgroundImage: {fileID: 0}
+  endlevelDialogData: {fileID: 11400000, guid: 753593ef9d1d3bc45acf47080994d657, type: 2}
+  isDialogNeeded: 1
+  backgroundImage: {fileID: -2982798086813019253, guid: 86560e388242b164e8a2a7d38f474f26, type: 3}
   targetSequence: 01000000020000000300000004000000050000000600000007000000
   showHoverPanel: 0
   showDay6Input: 0

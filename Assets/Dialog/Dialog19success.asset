@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u4E0D\u662F\u6068\u3002"
+    text: "It\u2019s not hatred."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u53EF\u5979\uFF0C\u518D\u4E5F\u56DE\u4E0D\u6765\u4E86\u3002"
+    text: "But she\u2026 is never coming back."

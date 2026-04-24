@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystemDescriptor;
 using static UnityEngine.Rendering.DebugUI;
 
 public class LevelManager : MonoBehaviour
@@ -12,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public LetterManager letterManager; // 拖入场景中的 LetterManager
     public GridManager gridManager; // 拖入场景中的 GridManager
     public GameObject canvas;
+    public Dialog dialog;
     //public LoadNextScene sceneLoader;
 
     [Header("场景名称配置")]
@@ -88,6 +91,11 @@ public class LevelManager : MonoBehaviour
         {
             Transform t = transform.Find("HoverPanel"); // 确保名字和 Hierarchy 里一致
             if (t != null) hoverPanel = t.gameObject;
+        }
+
+        if (this.dialog == null)
+        {
+            this.dialog = FindAnyObjectByType<Dialog>();
         }
     }
 
@@ -177,22 +185,44 @@ public class LevelManager : MonoBehaviour
      */
     public void OnLevelComplete()
     {
-        Debug.Log("关卡完成！当前 index = " + currentLevelIndex);
+        StartCoroutine(CompleteLevelRoutine());
+    }
 
-        // 这里可以添加过渡动画
+    IEnumerator CompleteLevelRoutine()
+    {
+        Debug.Log("关卡完成！准备播放结束对话。");
 
-        // 加载下一关
+        // 1. 显示结束对话
+        if (dialog != null && currentLevelData.endlevelDialogData != null)
+        {
+            dialog.UpdateDialogData(currentLevelData.endlevelDialogData);
+            dialog.ShowDialog();
+
+            // 等待对话框关闭
+            while (dialog.dialogPanel.activeInHierarchy)
+            {
+                yield return null; 
+            }
+        }
+        else
+        {
+            Debug.LogWarning("没有结束对话，直接进入下一关");
+        }
+
         currentLevelIndex++;
-
-        Debug.Log("增加后 index = " + currentLevelIndex);
 
         if (currentLevelIndex < allLevels.Count)
         {
             currentLevelData = allLevels[currentLevelIndex];
 
-            SwitchToNextScene();
+            yield return new WaitForSeconds(0.5f);
 
-            Debug.Log("准备加载第 " + (currentLevelIndex + 1) + " 天");
+            SwitchToNextScene();
+            Debug.Log("加载下一天数据完成");
+        }
+        else
+        {
+            Debug.Log("所有关卡已完成！");
         }
     }
 

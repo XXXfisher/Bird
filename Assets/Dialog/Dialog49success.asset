@@ -21,13 +21,13 @@ MonoBehaviour:
     text: This wasn't because of you.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4E0D\u662F\u56E0\u4E3A\u6211\u3002"
+    text: "It wasn\u2019t because of me."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u4E0D\u662F\u56E0\u4E3A\u6211\uFF0C\u624D\u79BB\u5F00\u7684\u3002"
+    text: "She didn\u2019t leave because of me."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u53EF\u6211\u4E3A\u4EC0\u4E48\u8FD8\u662F\u89C9\u5F97\u3002"
+    text: "But why do I still feel\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u662F\u6211\u6CA1\u80FD\u7559\u4F4F\u5979\u3002"
+    text: like I failed to hold onto her?

@@ -15,16 +15,16 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4F60\u53C8\u6765\u4E86\u3002"
+    text: "\u2026 It\u2019s you again."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u4ECA\u5929\uFF0C\u4E5F\u662F\u4F60\u628A\u4FE1\u9001\u6765\u7684\u3002"
+    text: You were the one who delivered the letter today as well.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u597D\u50CF\uFF0C\u5DF2\u7ECF\u5F00\u59CB\u4E60\u60EF\u4F60\u7684\u58F0\u97F3\u4E86\u3002"
+    text: "I think\u2026 I\u2019m starting to get used to your voice."
   - ID: Noah
     image: {fileID: 0}
     text: 
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4ECA\u5929\uFF0C\u4F60\u53C8\u60F3\u8BA9\u6211\u660E\u767D\u4EC0\u4E48\uFF1F"
+    text: "\u2026What are you trying to make me understand today?"

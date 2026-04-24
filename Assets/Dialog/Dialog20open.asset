@@ -15,19 +15,19 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u516C\u53F8\u7684\u90AE\u4EF6\u3002"
+    text: "\u2026A company letter."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5347\u804C\u901A\u77E5\u3002"
+    text: Promotion notice.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u90A3\u6BB5\u65F6\u95F4\u3002"
+    text: "During that time\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u51E0\u4E4E\u5929\u5929\u90FD\u6CE1\u5728\u516C\u53F8\u3002"
+    text: I was at work almost every day.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u4EE5\u4E3A\u518D\u52AA\u529B\u4E00\u70B9\u3002"
+    text: "I thought that if I just worked a little harder\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u4E00\u5207\u5C31\u4F1A\u597D\u8D77\u6765\u3002"
+    text: Everything would get better.

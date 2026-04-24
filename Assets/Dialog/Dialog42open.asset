@@ -15,16 +15,16 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u8B66\u65B9\u62A5\u544A\u3002"
+    text: Police report.
   - ID: Noah
     image: {fileID: 0}
     text: "Conclusion\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "The incident was just that\u2014an accident."
+    text: "The incident was just that\u2014an unfortunate accident."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6CA1\u6709\u522B\u7684\u539F\u56E0\u3002"
+    text: No other cause
   - ID: Noah
     image: {fileID: 0}
-    text: "\u4E5F\u6CA1\u6709\u8C01\u8BE5\u4E3A\u6B64\u8D1F\u8D23\u3002"
+    text: No one to blame.

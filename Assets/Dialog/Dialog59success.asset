@@ -21,19 +21,19 @@ MonoBehaviour:
     text: with you.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4F60\u6765\u4E86\u3002 "
+    text: "\u2026You came."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u4E00\u76F4\u628A\u8FD9\u4E9B\u4FE1\u5E26\u6765\u7684\u4EBA\u3002 "
+    text: "The one who\u2019s been bringing all these letters\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5C31\u662F\u4F60\uFF0C\u5BF9\u5417\uFF1F "
+    text: "it was you, wasn\u2019t it?"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u90A3\u53EA\u767D\u9E1F\u2026\u2026 "
+    text: "That white bird\u2026"
   - ID: Noah
     image: {fileID: 0}
-    text: "\u662F\u4F60\u5417\uFF0CElena\uFF1F "
+    text: was that you, Elena?
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u6C42\u4F60\u544A\u8BC9\u6211\u3002 "
+    text: "\u2026Please, tell me."

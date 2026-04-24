@@ -15,16 +15,16 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4E0D\u3002"
+    text: "\u2026No."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u522B\u662F\u8FD9\u4E2A\u3002"
+    text: Not this.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u8FD8\u662F\u4E0D\u6562\u6253\u5F00\u3002"
+    text: "I still don\u2019t dare open it."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u90A3\u5929\u665A\u4E0A\uFF0C\u6211\u8FDE\u5979\u6700\u540E\u4E00\u9762\u90FD\u6CA1\u89C1\u5230\u3002"
+    text: "That night\u2026 I didn\u2019t even see her one last time."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u5979\u4E00\u5B9A\u8FD8\u5728\u602A\u6211\u5427\u3002"
+    text: She must still be blaming me, right?

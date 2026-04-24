@@ -18,10 +18,10 @@ MonoBehaviour:
     text: You've done too much for me.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u53EF\u662FElena\u2026\u2026\u8FD9\u672C\u6765\u5C31\u662F\u6211\u8BE5\u505A\u7684\u3002"
+    text: "But Elena\u2026 this was always what I was supposed to do."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u4ECE\u6765\u6CA1\u89C9\u5F97\u90A3\u662F\u8D1F\u62C5\u3002"
+    text: I never saw it as a burden.
   - ID: Noah
     image: {fileID: 0}
-    text: "\u6211\u53EA\u662F\u60F3\u8BA9\u4F60\u8FC7\u5F97\u8F7B\u677E\u4E00\u70B9\u3002"
+    text: I just wanted to make things easier for you.

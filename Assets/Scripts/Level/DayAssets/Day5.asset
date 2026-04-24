@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   letterButtons: []
   levelType: 1
-  dialogData: {fileID: 0}
-  isDialogNeeded: 0
-  backgroundImage: {fileID: 0}
+  endlevelDialogData: {fileID: 11400000, guid: ca6c0ab4965bd4b469ac8275a5bf0afc, type: 2}
+  isDialogNeeded: 1
+  backgroundImage: {fileID: 7743381973722702082, guid: 25b2deb6390e21d4d9f35f6328b23ff8, type: 3}
   targetSequence: 
   showHoverPanel: 1
+  showDay6Input: 0

@@ -15,10 +15,10 @@ MonoBehaviour:
   dialogPieces:
   - ID: Noah
     image: {fileID: 0}
-    text: "\u2026\u2026\u4F60\u6765\u4E86\u3002"
+    text: "\u2026You\u2019re here."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u8FD9\u662F\u2026\u2026\u6211\u4EEC\u6700\u7231\u7684\u7535\u5F71\u3002 "
+    text: "This is\u2026 our favorite film."
   - ID: Noah
     image: {fileID: 0}
-    text: "\u4F60\u8981\u8D70\u4E86\u5417\uFF1F "
+    text: Are you leaving?

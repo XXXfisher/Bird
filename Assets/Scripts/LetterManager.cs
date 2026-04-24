@@ -32,6 +32,8 @@ public class LetterManager : MonoBehaviour
             //currentLetterInstance = null; // 重置当前实例
         }
 
+
+
         // 生成新实例
         currentLetterInstance = Instantiate(prefab);
 

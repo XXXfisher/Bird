@@ -7,6 +7,7 @@ public class MyLetterUI : MonoBehaviour
     private LevelData currentData;
     private LetterManager letterManager;
     public Dialog dialog; // 需要在Inspector里关联这个组件
+    private LetterButtonInfo myInfo;
 
 
 
@@ -19,24 +20,33 @@ public class MyLetterUI : MonoBehaviour
             GetComponent<UnityEngine.UI.Image>().sprite = info.buttonSprite;
         }
 
+        if (this.dialog == null)
+        {
+            this.dialog = Object.FindAnyObjectByType<Dialog>();
+        }
+
         // 2. 存储数据，供点击时使用
         this.myLetterPrefab = info.prefabToSpawn;
         this.currentData = data;
         this.letterManager = manager;
+        this.myInfo = info;
     }
 
     public void OnClick()
     {
         letterManager.SpawnLetter(myLetterPrefab);
 
-        if (currentData.isDialogNeeded)
+        if (myInfo != null && myInfo.openingDialog != null)
         {
-            // 调用对话系统显示对话框
             if (dialog != null)
             {
-                dialog.UpdateDialogData(currentData.dialogData);
+                dialog.UpdateDialogData(myInfo.openingDialog);
                 dialog.ShowDialog();
             }
+            else             {
+                Debug.LogWarning($"[MyLetterUI] Dialog component not assigned for {myInfo.letterName}");
+            }
         }
+ 
     }
 }

@@ -322,6 +322,7 @@ MonoBehaviour:
   letterManager: {fileID: 1030642273}
   gridManager: {fileID: 0}
   canvas: {fileID: 0}
+  dialog: {fileID: 1938414654}
   sceneA: Level_Letter
   sceneB: Level_Desk
   buttonPrefab: {fileID: 3891005749919822057, guid: c07a3145c5d43474eacb1f331ed24e6e, type: 3}
@@ -460,7 +461,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -51.19928, y: 31.029938, z: -530.61035, w: -138.08273}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2334,7 +2335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5503601100735391139, guid: 982568848d65b5f4297063078c9e92ed, type: 3}
+  m_Sprite: {fileID: 5503601100735391139, guid: b76abf6cea25fbc4c811a4099ea1b24a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3943,7 +3944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1938414650
 MonoBehaviour:
   m_ObjectHideFlags: 0
